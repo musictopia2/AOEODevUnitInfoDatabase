@@ -17,6 +17,9 @@ namespace DataLocationLibrary
         public static void Setup()
         {
             ll.MainLocation = "AOEODevUnitInfoDatabase";
+            CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.JsonSerializers.JsonSettingsGlobals.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+            CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.JsonSerializers.JsonSettingsGlobals.TypeNameHandling = Newtonsoft.Json.TypeNameHandling.None;
+            //these 2 was needed to insure that when saving, more flexible when reading the information.
         }
 
     }
