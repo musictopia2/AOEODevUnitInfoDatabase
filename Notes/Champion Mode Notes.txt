@@ -1,0 +1,1 @@
+time after attack rate upgrade = time before the upgrade * attack rate upgrade ( if +20% the attack rate upgrade value is 1.2)
