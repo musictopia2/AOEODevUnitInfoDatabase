@@ -1,0 +1,71 @@
+Greek	Greek AgogeDiscipline	Academy			Eco																									0.25											
+Greek	Greek AshlarMasonry	Academy	X																			0.25																			
+Greek	Greek GreekFire	Academy	X											0.5	0.25	0.25																									
+All	CompositeBow	ArcheryRange	X					0.1																					0.2												
+All	ImprovedFletching	ArcheryRange			Eco																												0.3								
+All	Marksmanship	ArcheryRange			Eco																												0.2								
+All	BarbedArrows	Armory	X					0.2																																	
+All	BodkinArrows	Armory	X					0.2																																	
+All	BroadheadArrows	Armory	X					0.2																																	
+All - Egyptian	ChainMail	Armory		X																			0.2	0.2	0	0	0														
+Egyptian	Egyptian ChainMailandBoiledLeatherArmor	Armory		X																			0.2	0.2	0.2	0	0														
+All	DamascusSteel	Armory	X			0.2	0.2																																		
+All	IronSmelting	Armory	X			0.2	0.2																																		
+Egyptian	Egyptian LamellarandLacqueredLeatherArmor	Armory		X																			0.2	0.2	0.2	0	0														
+All - Egyptian	LaminarArmor	Armory		X																			0.2	0.2	0	0	0														
+All - Egyptian	ScaleMail	Armory		X																			0.2	0.2	0	0	0														
+Egyptian	Egyptian ScaleMailandHideArmor	Armory		X																			0.2	0.2	0.2	0	0														
+All - Egyptian	ShieldBoss	Armory		X																			0	0	0.2	0	0														
+All - Egyptian	ShieldRim	Armory		X																			0	0	0.2	0	0														
+All - Egyptian	ShieldTruss	Armory		X																			0	0	0.2	0	0														
+All	Temper	Armory	X			0.2	0.2																																		
+Celtic	Celtic Brewing	BardHall		X																		0.05	0	0	0	0	0														
+Celtic	Celtic CallofRatis	BardHall	X						0.25																			0.25													
+Celtic	Celtic CalloftheBoar	BardHall		X																		0.05	0	0	0	0	0														
+Celtic	Celtic CalloftheBull	BardHall	X			0.05																																			
+Celtic	Celtic CalloftheStag	BardHall			Eco																										0.05										
+Celtic	Celtic CalltoArms	BardHall	X			1.5																																			
+Celtic	Celtic FurorCeltica	BardHall			Eco																										0.05										
+Celtic	Celtic HeadHunting	BardHall	X			0.05																																			
+All	CloseCombatExpertise	Barracks	X	X		0.15																0.15	0	0	0	0	0														
+All	CombinedArms	Barracks			Eco																									0.3											
+All	Conditioning	Barracks			Eco																									0.2											
+Celtic	Celtic ReinforcedWall	Building		X																		0.3	0	0	0	0	0														
+All	ReinforcedWall	Building		X																		0.7	0	0	0	0	0														
+Egyptian	Egyptian Ptolemy'sMight	Fortress			Eco																									0.25											
+Babylonian	Babylonian Cultivation	Garden			Eco																															0.25					
+Babylonian	Babylonian LargeGarden	Garden			Eco																																0.25				
+All	Coinage	Market			Eco																																				
+All	RoyalRoads	Market			Eco																										0.2										
+All	WoodenRoads	Market			Eco																										0.2										
+Egyptian	Egyptian MountedTraining	Stable			Eco																										0.05	0.1									
+All	Horsemanship	Stable			Eco																										0.05	0.1									
+All	Horseshoes	Stable	X	X			0.1	0.1														0.1	0	0	0	0	0														
+All	Purebred	Stable			Eco																										0.05	0.1									
+All	Hunting dogs	Storehouse	X																	1																					
+Celtic	Celtic GiftofBalor	Temple	X	X		0.25																0.25	0	0	0	0	0														
+Greek	Greek DivineVision	Temple			Eco																												0.2	0.2							
+Egyptian	Egyptian DivineProduction	Temple of Ptah			Eco																									0.4											
+Egyptian	Egyptian StrengthoftheGods	Temple of Ptah		X																		0.5	0	0	0	0	0														
+Egyptian	Egyptian EssenceoftheCobra	Temple of Set			Eco																										0.3										
+Greek	Greek MurderHoles	Towers	X					0.25																																	
+Norse	Norse Freyja'sBlessing	Towers	X									0.3																													
+Babylonian	Babylonian ReinforcedCart	TownCenter		X																		0.5	0	0	0	0	0														
+All - Babylonian	HandCart	TownCenter			Eco																										0.1										
+All	HealingOintment	TownCenter			Eco																																2				
+All	Loom	TownCenter	X																			0.4																			
+All	TownWatch	TownCenter			Eco																												0.25								
+All	WheelBarrow	TownCenter			Eco																										0.05										
+Babylonian	Babylonian StoneWall	Wall		X																		1.25	0	0	0	0	0														
+All	StoneWall	Wall		X																		0.5	0	0	0	0	0														
+Persian	Persian BlotOuttheSun	War Academy		X																		(-0,25)	0	0	0	0	0		0.3												
+Persian	Persian PaidLabor	War Academy			Eco																									0.45								0.4			
+Persian	Persian RelentlessZeal	War Academy			Eco																									0.6								0.3	0.3	0.3	0.3
+Persian	Persian RigorousTraining	War Academy			Eco																									0.3								0.15	0.15	0.15	0.15
+Persian	Persian ShieldWall	War Academy		X																			-0.1	0	0.2	1.8	0														
+Norse	Norse DogTraining	Wathpost			Eco																									0.3											
+Babylonian	Babylonian CodeofHammurabi	Ziggurat			Eco																													0.1	0.15						
+Babylonian	Babylonian Pharmacology	Ziggurat			Eco																																1				
+Babylonian	Babylonian TotalWar	Ziggurat	X			0.1	0.1	0.1	0.1	0.1								25%																							
+Babylonian	Babylonian IronWheels	Ziggurat		X																		0.1	0	0	0	0	0				0.1										
+Egyptian	Egyptian DesertConditioning	Stable	X	X			0.1	0.1														0.1									0.05										

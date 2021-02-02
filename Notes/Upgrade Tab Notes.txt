@@ -1,0 +1,8 @@
+Civ Tab.
+
+If there is a civ that has All - then name
+it means its all civs except for the name.
+
+All means all.
+
+Otherwise, its the civ allowed.

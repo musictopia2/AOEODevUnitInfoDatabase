@@ -1,0 +1,8 @@
+Step 1:
+Needs to create a temporary structure for it.
+
+Will be in json format.
+
+there are 2 classes needed.
+
+Once i have the 2 files in json format, i can play around and see what to do with it.
