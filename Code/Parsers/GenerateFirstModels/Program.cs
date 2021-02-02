@@ -2,6 +2,7 @@
 using CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.Misc;
 using CommonBasicStandardLibraries.BasicDataSettingsAndProcesses;
 using CommonBasicStandardLibraries.CollectionClasses;
+using CommonBasicStandardLibraries.Exceptions;
 using System;
 using ff = DataLocationLibrary.FileHelperClass;
 using fs = CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileFunctions;
@@ -13,8 +14,8 @@ namespace GenerateFirstModels
         static void Main()
         {
             ff.Setup();
-            GenerateUpgradeModel();
-            //GenerateDatabaseModel();
+            //GenerateUpgradeModel();
+            GenerateDatabaseModel();
             
         }
 
@@ -44,6 +45,11 @@ namespace GenerateFirstModels
             text = text.Replace("/", " ");
             text = text.ConvertCase();
             text = text.Replace(" ", "");
+            text = text.Replace("(%", "");
+            text = text.Replace("(", "");
+            text = text.Replace(")", "");
+            text = text.Replace("<1=", "");
+            text = text.Replace("=CritDamageAnimation1", "");
             return text;
         }
 

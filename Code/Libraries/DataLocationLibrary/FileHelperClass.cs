@@ -8,8 +8,8 @@ namespace DataLocationLibrary
         public const string FirstParsedExcelDatabase = @"ParsedData\ExcelDatabase.json";
         public const string FirstParsedExcelUpgrades = @"ParsedData\ExcelUpgrade.json";
 
-        public const string UpgradeModelLocation = @"ParsedData\DatabaseModel.txt";
-        public const string DatabaseModelLocation = @"ParsedData\UpgradeModel.txt";
+        public const string UpgradeModelLocation = @"ParsedData\UpgradeModel.txt";
+        public const string DatabaseModelLocation = @"ParsedData\DatabaseModel.txt";
 
         public const string DatabaseHeaders = @"RawData\ExcelDatabaseHeaders.txt";
         public const string ExcelUpgradeHeaders = @"RawData\ExcelUpgradeHeaders.txt";
