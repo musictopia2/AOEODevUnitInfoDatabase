@@ -1,0 +1,18 @@
+﻿@if (_upgrades.Count == 0)
+{
+    <div>Loading Data .......</div>
+    return;
+}
+<table>
+    <tr>
+        <td><b>Civ</b></td>
+        <td><b>From Where</b></td>
+    </tr>
+    @foreach (var item in _upgrades)
+    {
+        <tr>
+            <td>@item.Civ</td>
+            <td>@item.FromWhere</td>
+        </tr>
+    }
+</table>
