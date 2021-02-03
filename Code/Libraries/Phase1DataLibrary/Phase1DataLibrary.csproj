@@ -5,7 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Phase1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Phase1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommonBasicStandardLibraries" Version="3.0.21" />
   </ItemGroup>
+
+  
 
 </Project>

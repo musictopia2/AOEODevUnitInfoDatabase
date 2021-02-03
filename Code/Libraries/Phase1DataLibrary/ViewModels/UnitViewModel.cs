@@ -1,6 +1,6 @@
-﻿using CommonBasicStandardLibraries.CollectionClasses;
+﻿using CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
+using CommonBasicStandardLibraries.CollectionClasses;
 using CommonBasicStandardLibraries.Exceptions;
-using Phase1DataLibrary.Helpers;
 using Phase1DataLibrary.Models;
 using Phase1DataLibrary.Services;
 using System.Linq;
@@ -16,40 +16,35 @@ namespace Phase1DataLibrary.ViewModels
         }
         public string CivilizationRequested { get; set; } = "";
         public string UnitRequested { get; set; } = "";
-        public AttackUnitModel UnitUsed { get; set; }
-        public EnumStage Stage { get; private set; }
-        public CustomBasicList<string> Units { get; private set; }
-        
-
         public CustomBasicList<string> Civilizations { get; private set; }
-        public async Task ChoseCivilizationAsync()
-        {
-            if (string.IsNullOrWhiteSpace(CivilizationRequested))
-            {
-                throw new BasicBlankException("Should not allowed to populate the units because civilzation was not chosen");
-            }
-            Units = await _service.GetUnitsAsync(CivilizationRequested);
-            Stage = EnumStage.ChooseUnit;
-        }
+        public CustomBasicList<string> UnitStringList { get; private set; }
+        public CustomBasicList<AttackUnitModel> UnitAttackList { get; private set; }
+        private CustomBasicList<AttackUnitModel> _fullAttackList = new CustomBasicList<AttackUnitModel>();
         public async Task ChoseUnitAsync()
         {
             if (string.IsNullOrWhiteSpace(UnitRequested))
             {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
-            UnitUsed = await _service.GetUnitInfoAsync(CivilizationRequested, UnitRequested);
-            Stage = EnumStage.ShowResults;
+            _fullAttackList = await _service.GetUnitsAsync(UnitRequested);
+            UnitAttackList = _fullAttackList.ToCustomBasicList();
         }
         public void Clear()
         {
-            Stage = EnumStage.ChooseCiv;
             CivilizationRequested = "";
-            UnitUsed = null;
+            UnitAttackList.Clear();
+            _fullAttackList.Clear();
+            Civilizations.Clear();
             UnitRequested = "";
+        }
+        public void FilterCivilization()
+        {
+            UnitAttackList = _fullAttackList.Where(xxx => xxx.Civilization == CivilizationRequested).ToCustomBasicList();
+            //hopefully this simple.
         }
         public async Task InitAsync()
         {
-            Civilizations = await _service.GetCivilizationsAsync();
+            UnitStringList = await _service.GetUnitsAsync();
         }
     }
 }

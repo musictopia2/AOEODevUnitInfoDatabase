@@ -1,0 +1,39 @@
+﻿Looks like there are some exceptions for calculations for the dpa.
+
+Well see what they are and then i can see how to handle in the new system.
+
+one is immortals.
+
+for that, the first 2 are the hand the the other 2 are the ranged portions.
+
+well see what the other exceptions are.
+
+
+the units that has charge has another exception.
+
+because of the charge.
+so woad raiders and lancers (only champions) have a charge animation (only on the first hit) it's animation 3 for those where the dps is also multiplied, *3 for woads, 2.75 for lancers champion
+
+would probably need another field for charge.
+that if used, then would consider.  if not, then will not have that exception.
+
+
+good news is since road and lancers are champion and we are not doing that yet,
+then don't have to worry about that portion yet.
+
+
+for egy and greek villager and later romans  anim 1 2 and 3 are melee attack animation to buildings only, animation 4 and 5 are melee attack animation to units only, animations 6 7 8 are animation with range damage (huntables only)
+
+
+for all other villagers ( babylonian celtic norse and persian) animation 1 and 2 is melee attack animation to unit only, animation 3 is meleee attack animation to buildings, animation 4 and 5 are animations for range damage (huntables only)
+
+
+to test the exceptions, would need to test with villagers.
+
+then with immortals.
+
+
+as copied.
+
+
+this means the part that does it will need to consider other things.

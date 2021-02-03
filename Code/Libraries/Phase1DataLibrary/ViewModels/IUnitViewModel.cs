@@ -1,5 +1,4 @@
 ﻿using CommonBasicStandardLibraries.CollectionClasses;
-using Phase1DataLibrary.Helpers;
 using Phase1DataLibrary.Models;
 using Phase1DataLibrary.Services;
 using System;
@@ -12,19 +11,24 @@ namespace Phase1DataLibrary.ViewModels
 {
     public interface IUnitViewModel 
     {
-        EnumStage Stage { get; }
-        CustomBasicList<string> Civilizations { get; }
-        string CivilizationRequested { get; set; } //you have the right to request the civilization.
+        CustomBasicList<string> UnitStringList { get; } //this would show up first now.
         string UnitRequested { get; set; }
-        AttackUnitModel UnitUsed { get; set; }
+        CustomBasicList<string> Civilizations { get; } //based on unit selected.
+        string CivilizationRequested { get; set; } //you have the right to request the civilization.
+
+        CustomBasicList<AttackUnitModel> UnitAttackList { get; } //after choosing the unit.
+
+
+        //not just one unit though.
+
+
         Task InitAsync();
 
-        CustomBasicList<string> Units { get; }
 
         void Clear(); //you have the ability to clear out to start over again.
-
-        Task ChoseCivilizationAsync();
         Task ChoseUnitAsync();
+
+        void FilterCivilization();
 
 
 
