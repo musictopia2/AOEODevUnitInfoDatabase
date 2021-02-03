@@ -2,3 +2,6 @@ See Damage Duration Notes for the basics.
 
 Now we need the more complex formulas.
 
+Looks like the complex parts are for later.
+
+that means it can wait for now.

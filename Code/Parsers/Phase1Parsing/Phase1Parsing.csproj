@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\DataLocationLibrary\DataLocationLibrary.csproj" />
+    <ProjectReference Include="..\..\Libraries\FirstDataModelLibrary\FirstDataModelLibrary.csproj" />
+    <ProjectReference Include="..\..\Libraries\Phase1DataLibrary\Phase1DataLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

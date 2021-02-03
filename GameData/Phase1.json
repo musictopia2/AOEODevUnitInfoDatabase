@@ -1,0 +1,1610 @@
+[
+  {
+    "UnitName": "Asabara",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 19.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Augur",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.42
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Axeman",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "HandDPS": 8.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Ballista",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 21.0
+  },
+  {
+    "UnitName": "BallistaTrireme",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 23.0
+  },
+  {
+    "UnitName": "BatteringRam",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 32.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "BatteringRam",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.73,
+      2.17
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 32.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Berserker",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.92,
+      2.08
+    ],
+    "HandDPS": 30.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Bireme",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.21
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 45.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Bowman",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.25,
+      2.25
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Bowman",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.54,
+      2.67
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 9.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Bowman",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      3.38,
+      3.38
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 12.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Bowman",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.38,
+      3.38
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 9.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "CamelRider",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 15.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Caravan",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Caravan",
+    "Civilization": "Celtic",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Caravan",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Caravan",
+    "Civilization": "Greek",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Caravan",
+    "Civilization": "Norse",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Caravan",
+    "Civilization": "Persian",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Carpentom",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.67,
+      1.38
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Cataphract",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 20.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Catapult",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 24.0
+  },
+  {
+    "UnitName": "CatapultTrireme",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 23.0
+  },
+  {
+    "UnitName": "ChariotArcher",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.88
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 34.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "ChariotArcher",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.08,
+      2.08
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Chief",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.96,
+      2.92
+    ],
+    "HandDPS": 40.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Druid",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.04
+    ],
+    "HandDPS": 15.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "ElephantArcher",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.14
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 75.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Farbjoðr",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.71,
+      1.92,
+      2.96,
+      2.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 36.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "FireShip",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 40.0
+  },
+  {
+    "UnitName": "FireShip",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 40.0
+  },
+  {
+    "UnitName": "FireShip",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.88
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 40.0
+  },
+  {
+    "UnitName": "FishingBoat",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.54
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 8.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "FishingBoat",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 8.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "FishingBoat",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 8.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "FishingBoat",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 8.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "FishingBoat",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 8.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "FishingBoat",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      4.04
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 8.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Galley",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.3,
+      3.63
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Gastraphetes",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 15.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Harjar",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.54,
+      1.63
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Hippikon",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.33,
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 30.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Hoplite",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08
+    ],
+    "HandDPS": 13.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Horseman",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 16.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Horseman",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 18.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Hypaspist",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Immortal",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.67,
+      1.58,
+      2.29,
+      2.67
+    ],
+    "HandDPS": 17.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 15.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Lancer",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.54,
+      1.63
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 17.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "LogThrower",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      4.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 58.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "UnitName": "Longship",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "LongSwordsman",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.42,
+      2.08
+    ],
+    "HandDPS": 13.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Magus",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.63,
+      1.46
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MangonelGalley",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      4.54,
+      4.54
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 23.0
+  },
+  {
+    "UnitName": "MerchantTransport",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.92
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MerchantTransport",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MerchantTransport",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MerchantTransport",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MerchantTransport",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.08
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MerchantTransport",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.13
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MountedArcher",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.5,
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "MountedArcher",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.5,
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 12.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "OxCart",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Palintonon",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 58.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "UnitName": "Palintonon",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "UnitName": "Palintonon",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "UnitName": "Palintonon",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "UnitName": "Peltast",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 9.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Priest",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.67,
+      1.63
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Priest",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "PriestessofRa",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0,
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "PriestofPtah",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0,
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "PriestofSet",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0,
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Prodromos",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 20.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Raider",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.46,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 13.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Ram",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.83,
+      3.21
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 26.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "RamShip",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.5,
+      2.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 30.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "RamShip",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.3,
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 30.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "RangeScout",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.5,
+      2.63
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 3.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Rhapsode",
+    "Civilization": "Norse",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "RoyalGuard",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.0,
+      0.92
+    ],
+    "HandDPS": 14.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "SacredDeer",
+    "Civilization": "Celtic",
+    "AnimationDurations": [],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Sapper",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.0,
+      1.58,
+      2.0,
+      2.75
+    ],
+    "HandDPS": 12.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Sarissophoroi",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Scout",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.38,
+      1.63
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 4.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Scout",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.83,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 4.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Scout",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.33,
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 4.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Scout",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.54,
+      1.42
+    ],
+    "HandDPS": 3.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Scout",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.83,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 4.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Scout",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 4.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Seer",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.88,
+      1.88
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "ShieldBearer",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.96,
+      1.96
+    ],
+    "HandDPS": 7.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "SiegeTower",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.83,
+      2.0,
+      2.29
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 32.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "SiegeTower",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 40.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Skirmisher",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.67,
+      2.71
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Slinger",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.63,
+      1.75
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 6.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Slinger",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.88,
+      2.08
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 7.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Slinger",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 6.5,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Sparabara",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.04
+    ],
+    "HandDPS": 9.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Spearman",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.46,
+      1.67
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Spearman",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.0,
+      0.79
+    ],
+    "HandDPS": 12.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Spearman",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "HandDPS": 10.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Spearman",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Spearman",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      0.96,
+      1.58
+    ],
+    "HandDPS": 10.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Spearman",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      0.92,
+      0.92
+    ],
+    "HandDPS": 12.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "StoneThrower",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      4.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "UnitName": "Swanship",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      3.75
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 60.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Takabara",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.17,
+      2.17
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "ThrowingAxeman",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.58,
+      1.54
+    ],
+    "HandDPS": 6.5,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Toxotes",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 11.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Trireme",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Trireme",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Ulfheðinn",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.63,
+      1.17
+    ],
+    "HandDPS": 18.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Villager",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      3.13,
+      3.21,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "HandDPS": 5.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 5.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Villager",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      3.13,
+      3.21,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "HandDPS": 5.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 5.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Villager",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.5,
+      3.33,
+      1.33,
+      2.38,
+      2.38,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 5.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 5.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Villager",
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      2.5,
+      3.33,
+      1.33,
+      2.38,
+      2.38,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 5.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 5.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Villager",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      3.13,
+      3.21,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "HandDPS": 5.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 5.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "Villager",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.13,
+      3.21,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "HandDPS": 5.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 5.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "WarChariot",
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.67,
+      1.67
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "WarDog",
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.17,
+      1.54
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 5.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "WarElephant",
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.0,
+      2.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 23.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "WarWagon",
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.3,
+      4.43
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 46.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "UnitName": "WoadRaider",
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.58,
+      1.21,
+      1.42
+    ],
+    "HandDPS": 15.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  }
+]
