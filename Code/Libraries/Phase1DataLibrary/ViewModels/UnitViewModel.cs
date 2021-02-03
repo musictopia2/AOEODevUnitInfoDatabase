@@ -40,7 +40,6 @@ namespace Phase1DataLibrary.ViewModels
         public void FilterCivilization()
         {
             UnitAttackList = _fullAttackList.Where(xxx => xxx.Civilization == CivilizationRequested).ToCustomBasicList();
-            //hopefully this simple.
         }
         public async Task InitAsync()
         {

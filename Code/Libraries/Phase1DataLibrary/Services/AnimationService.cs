@@ -18,7 +18,14 @@ namespace Phase1DataLibrary.Services
                 unit.SiegeMeleeDPS,
                 unit.SiegeRangedDPS
             };
+            if (unit.UnitName == "Palintonon" || unit.UnitName == "LogThrower" || unit.UnitName == "StoneThrower")
+            {
+                possibleAttacks.RemoveAt(3); //for now, remove the mele dps for palins.
+            }
             possibleAttacks.RemoveAllAndObtain(xxx => xxx == 0);
+
+            
+
             if (possibleAttacks.Count <= 1)
             {
                 return unit.AnimationDurations.ToCustomBasicList();
@@ -29,9 +36,29 @@ namespace Phase1DataLibrary.Services
             //this means exceptions.
             if (possibleAttacks.Count == 2)
             {
+                
+                if (unit.UnitName == "SiegeTower")
+                {
+                    //the babylon siege tower has exceptions.
+                    //has 3.
+                    if (unit.AnimationDurations.Count != 3)
+                    {
+                        throw new BasicBlankException("The Babylonian Siege Tower Must Have 3 Animation Durations");
+                    }
+                    if (damage == EnumDamageType.SiegeMelee)
+                    {
+                        return unit.AnimationDurations.Take(2).ToCustomBasicList();
+                    }
+                    if (damage == EnumDamageType.Ranged)
+                    {
+                        return unit.AnimationDurations.Skip(2).Take(1).ToCustomBasicList();
+                    }
+                    return new CustomBasicList<double>();
+                }
+
                 if (unit.UnitName != "Immortal")
                 {
-                    throw new BasicBlankException("Immortals should be the only one with 2 attacks.  If that is wrong, needs to account for");
+                    throw new BasicBlankException($"Immortals should be the only one with 2 attacks.  If that is wrong, needs to account for.  Unit this time was {unit.UnitName}");
                 }
                 if (unit.AnimationDurations.Count != 4)
                 {
