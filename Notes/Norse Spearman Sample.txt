@@ -1,0 +1,20 @@
+2 animations
+
+first is .96 and the second is 1.58
+
+based on the formula
+
+dps is 10
+10 * (.96 + 1.58) / 2
+
+
+this means its 12.7
+
+has to remember the divide by the number of animations.
+
+
+
+for norse, the fields are
+Animation1Hit1Durations
+and
+Animation2Hit1Durations

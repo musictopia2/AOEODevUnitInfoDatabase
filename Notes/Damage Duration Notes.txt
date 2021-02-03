@@ -1,0 +1,7 @@
+basic formula is:
+
+dps * (adding up the total animation durations) / number of durations.
+for average flat damage per shot.
+
+for spearman its (10 * (1 + 1 + 1 + 1 + 1) = 50 / 5 = 10.
+

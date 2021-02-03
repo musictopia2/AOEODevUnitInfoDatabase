@@ -1,0 +1,4 @@
+See Damage Duration Notes for the basics.
+
+Now we need the more complex formulas.
+

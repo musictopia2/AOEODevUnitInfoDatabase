@@ -1,0 +1,20 @@
+there are 5 animations.
+
+the dps is 10.
+
+each animation has 1.
+
+so its 10 times (1 + 1 + 1 + 1 + 1) / 5
+equals 10 in this case.
+
+has to see if i can find the fields to correspond.
+
+i propose doing a list of int.
+
+
+the animations this time are:
+Animation1Hit1Durations
+Animation2Hit1Durations
+Animation3Durations
+Animation4Durations
+Animation5Durations

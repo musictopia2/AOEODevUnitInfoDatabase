@@ -1,0 +1,20 @@
+The pop was important so it can show per pop (can be a good comparison).
+
+
+The health, armor (defensive stuff) is important for the target.
+
+target will come later.
+
+
+most important for the animations (which this tool will do)
+Animation1Hit1Durations
+Animation2Hit1Durations
+Animation3Durations
+Animation4Durations
+Animation5Durations
+Animation6Durations
+Animation7Durations
+Animation8Durations
+
+
+there are other fields (especially for animation 1) others not as much.
