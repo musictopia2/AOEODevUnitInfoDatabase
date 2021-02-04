@@ -181,7 +181,7 @@ namespace Phase1DataLibrary.Services
             }
             if (unit.UnitName == "Lancer" && unit.Champion)
             {
-                return 2.75;
+                return 2.5;
             }
             //champion lancers will have 2.75.
             return 0.0;
