@@ -33,6 +33,7 @@ namespace Phase1Site
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<IUnitService, UnitService>(); //for now, this should be fine.
             services.AddSingleton<IAnimationService, AnimationService>();
+            services.AddSingleton<IDamageExceptionService, DamageExceptionService>();
             services.AddScoped<IUnitViewModel, UnitViewModel>(); //this one has to be scoped for sure.  so what one person does would not affect another player.
         }
 

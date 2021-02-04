@@ -27,6 +27,24 @@ namespace Phase1DataLibrary.Services
                 }
             }
             possibleAttacks.RemoveAllAndObtain(xxx => xxx == 0);
+
+            if (unit.UnitName == "Sapper")
+            {
+                //this has exception here too.
+                if (damage == EnumDamageType.Hand)
+                {
+                    if (damage == EnumDamageType.Hand)
+                    {
+                        return unit.AnimationDurations.Take(2).ToCustomBasicList();
+                    }
+                    if (damage == EnumDamageType.SiegeMelee)
+                    {
+                        return unit.AnimationDurations.Skip(2).Take(2).ToCustomBasicList();
+                    }
+                    return new CustomBasicList<double>();
+                }
+            }
+
             if (charge > 0)
             {
                 if (unit.AnimationDurations.Count != 3)
@@ -48,7 +66,19 @@ namespace Phase1DataLibrary.Services
             }
             if (unit.UnitName == "Farbjoðr")
             {
-                return unit.AnimationDurations.Skip(2).Take(2).ToCustomBasicList();
+                if (damage == EnumDamageType.SiegeMelee)
+                {
+                    return unit.AnimationDurations.Skip(2).Take(2).ToCustomBasicList();
+                }
+                if (unit.Champion == false)
+                {
+                    return new CustomBasicList<double>();
+                }
+                if (damage == EnumDamageType.Hand)
+                {
+                    return unit.AnimationDurations.Take(2).ToCustomBasicList();
+                }
+                return new();
                 //this has an exception.  for champion, will be different.  but we are not there yet.
             }
 

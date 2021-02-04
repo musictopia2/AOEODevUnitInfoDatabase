@@ -363,8 +363,8 @@
     "RangedStartAt": 1,
     "Civilization": "Persian",
     "AnimationDurations": [
-      2.7,
-      2.7
+      2.704,
+      2.704
     ],
     "HandDPS": 0.0,
     "CavalryDPS": 0.0,
@@ -1514,7 +1514,7 @@
       1.33
     ],
     "HandDPS": 0.0,
-    "CavalryDPS": 30.0,
+    "CavalryDPS": 27.0,
     "RangedDPS": 0.0,
     "SiegeMeleeDPS": 0.0,
     "SiegeRangedDPS": 0.0

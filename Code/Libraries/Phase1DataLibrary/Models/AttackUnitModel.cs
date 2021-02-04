@@ -21,17 +21,19 @@ namespace Phase1DataLibrary.Models
         public double RangedDPS { get; set; }
         public double SiegeMeleeDPS { get; set; }
         public double SiegeRangedDPS { get; set; }
-        public double HandDPA(IAnimationService service) => GetDPA(service, HandDPS, EnumDamageType.Hand);
-        public double CavalryDPA(IAnimationService service) => GetDPA(service, CavalryDPS, EnumDamageType.Cavaltry);
-        public double RangedDPA(IAnimationService service) => GetDPA(service, RangedDPS, EnumDamageType.Ranged);
-        public double SiegeMeleeDPA(IAnimationService service) => GetDPA(service, SiegeMeleeDPS, EnumDamageType.SiegeMelee);
-        public double SiegeRangedDPA(IAnimationService service) => GetDPA(service, SiegeRangedDPS, EnumDamageType.SiegeRanged);
-        public double ChargeDPA(IAnimationService service) => HandDPS > 0 ? GetDPA(service, HandDPS, EnumDamageType.Charge) : GetDPA(service, CavalryDPS, EnumDamageType.Charge);
-        private double GetDPA(IAnimationService service, double damage, EnumDamageType category)
+        public double HandDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, HandDPS, EnumDamageType.Hand);
+        public double CavalryDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, CavalryDPS, EnumDamageType.Cavaltry);
+        public double RangedDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, RangedDPS, EnumDamageType.Ranged);
+        public double SiegeMeleeDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, SiegeMeleeDPS, EnumDamageType.SiegeMelee);
+        public double SiegeRangedDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, SiegeRangedDPS, EnumDamageType.SiegeRanged);
+        public double ChargeDPA(IAnimationService aService, IDamageExceptionService dService) => HandDPS > 0 ? GetDPA(aService, dService, HandDPS, EnumDamageType.Charge)
+            : GetDPA(aService, dService, CavalryDPS, EnumDamageType.Charge);
+        private double GetDPA(IAnimationService aService, IDamageExceptionService dService, double damage, EnumDamageType category)
         {
             double dps = damage;
-            double charge = service.GetChargeDamage(this);
-            CustomBasicList<double> animations = service.GetAttackAnimations(this, category, charge);
+            dps = dService.GetDamage(this, damage, category);
+            double charge = aService.GetChargeDamage(this);
+            CustomBasicList<double> animations = aService.GetAttackAnimations(this, category, charge);
             if (animations.Count == 0)
             {
                 return 0;
