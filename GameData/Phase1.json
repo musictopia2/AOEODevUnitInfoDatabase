@@ -1,5 +1,6 @@
 [
   {
+    "Champion": false,
     "UnitName": "Asabara",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -16,6 +17,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Asabara",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 20.9,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Augur",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -31,6 +50,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Axeman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -48,6 +68,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Axeman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.5,
+      1.5,
+      1.5
+    ],
+    "HandDPS": 8.8,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Ballista",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -64,6 +103,24 @@
     "SiegeRangedDPS": 21.0
   },
   {
+    "Champion": true,
+    "UnitName": "Ballista",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 21.0
+  },
+  {
+    "Champion": false,
     "UnitName": "BallistaTrireme",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -80,6 +137,24 @@
     "SiegeRangedDPS": 23.0
   },
   {
+    "Champion": true,
+    "UnitName": "BallistaTrireme",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 28.75
+  },
+  {
+    "Champion": false,
     "UnitName": "BatteringRam",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -96,6 +171,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "BatteringRam",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 48.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "BatteringRam",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -112,6 +205,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "BatteringRam",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.73,
+      2.17
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 40.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Berserker",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -128,6 +239,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Berserker",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.92,
+      2.08
+    ],
+    "HandDPS": 30.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Bireme",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -143,6 +272,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Bireme",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.21
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 45.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Bowman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -159,6 +305,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Bowman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.25,
+      2.25
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Bowman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -175,6 +339,41 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Bowman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.54,
+      2.67
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 9.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": true,
+    "UnitName": "Bowman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.7,
+      2.7
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 11.25,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Bowman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -191,6 +390,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Bowman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      3.38,
+      3.38
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 12.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Bowman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -207,6 +424,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "CamelRider",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -223,6 +441,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "CamelRider",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 15.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Caravan",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -236,6 +472,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Caravan",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -249,6 +486,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Caravan",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -262,6 +500,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Caravan",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -275,6 +514,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Caravan",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -288,6 +528,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Caravan",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -301,6 +542,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Carpentom",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -317,6 +559,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Carpentom",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.67,
+      1.38
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Cataphract",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -333,6 +593,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Cataphract",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 24.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Catapult",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -349,6 +627,24 @@
     "SiegeRangedDPS": 24.0
   },
   {
+    "Champion": true,
+    "UnitName": "Catapult",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 30.0
+  },
+  {
+    "Champion": false,
     "UnitName": "CatapultTrireme",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -365,6 +661,24 @@
     "SiegeRangedDPS": 23.0
   },
   {
+    "Champion": true,
+    "UnitName": "CatapultTrireme",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 28.75
+  },
+  {
+    "Champion": false,
     "UnitName": "Champion",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -381,6 +695,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Champion",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.42,
+      2.08
+    ],
+    "HandDPS": 22.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "ChariotArcher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -396,6 +728,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "ChariotArcher",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.88
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 34.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "ChariotArcher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -412,6 +761,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "ChariotArcher",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.08,
+      2.08
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Chief",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -428,6 +795,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Chief",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.96,
+      2.92
+    ],
+    "HandDPS": 60.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Druid",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -443,6 +828,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "ElephantArcher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -458,6 +844,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "ElephantArcher",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.14
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 75.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": true,
     "UnitName": "Farbjoðr",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -476,6 +879,26 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
+    "UnitName": "Farbjoðr",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.71,
+      1.92,
+      2.96,
+      2.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 36.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "FireShip",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -491,6 +914,23 @@
     "SiegeRangedDPS": 40.0
   },
   {
+    "Champion": true,
+    "UnitName": "FireShip",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 40.0
+  },
+  {
+    "Champion": false,
     "UnitName": "FireShip",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -506,6 +946,23 @@
     "SiegeRangedDPS": 40.0
   },
   {
+    "Champion": true,
+    "UnitName": "FireShip",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 40.0
+  },
+  {
+    "Champion": false,
     "UnitName": "FireShip",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -521,6 +978,23 @@
     "SiegeRangedDPS": 40.0
   },
   {
+    "Champion": true,
+    "UnitName": "FireShip",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.88
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 40.0
+  },
+  {
+    "Champion": false,
     "UnitName": "FishingBoat",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -536,6 +1010,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "FishingBoat",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -551,6 +1026,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "FishingBoat",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -567,6 +1043,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "FishingBoat",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -583,6 +1060,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "FishingBoat",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -598,6 +1076,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "FishingBoat",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -613,6 +1092,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Galley",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -629,6 +1109,41 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Galley",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.3,
+      3.63
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": true,
+    "UnitName": "Gastraphetes",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      2.4,
+      2.4
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 18.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Gastraphetes",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -645,6 +1160,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Harjar",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -661,6 +1177,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Harjar",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.54,
+      1.63
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Hippikon",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -678,6 +1212,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Hippikon",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.33,
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 30.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Hoplite",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -697,6 +1250,27 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Hoplite",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.08,
+      1.08,
+      1.08,
+      1.08,
+      1.08
+    ],
+    "HandDPS": 13.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Horseman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -713,6 +1287,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Horseman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 16.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Horseman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -729,6 +1321,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Horseman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.33,
+      1.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 18.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Hypaspist",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -750,6 +1360,29 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Hypaspist",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Immortal",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -768,6 +1401,26 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Immortal",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.67,
+      1.58,
+      2.29,
+      2.67
+    ],
+    "HandDPS": 17.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 15.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Lancer",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -784,6 +1437,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Lancer",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.54,
+      1.63,
+      1.42
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 17.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "LogThrower",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -799,6 +1471,23 @@
     "SiegeRangedDPS": 58.0
   },
   {
+    "Champion": true,
+    "UnitName": "LogThrower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      4.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Longship",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -814,6 +1503,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Longship",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 57.5,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "LongSwordsman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -830,6 +1536,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "LongSwordsman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.42,
+      2.08
+    ],
+    "HandDPS": 13.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Magus",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -846,6 +1570,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MangonelGalley",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -862,6 +1587,24 @@
     "SiegeRangedDPS": 23.0
   },
   {
+    "Champion": true,
+    "UnitName": "MangonelGalley",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      4.54,
+      4.54
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 23.0
+  },
+  {
+    "Champion": false,
     "UnitName": "MerchantTransport",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -877,6 +1620,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MerchantTransport",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -892,6 +1636,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MerchantTransport",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -907,6 +1652,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MerchantTransport",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -922,6 +1668,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MerchantTransport",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -937,6 +1684,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MerchantTransport",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -952,6 +1700,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "MountedArcher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -968,6 +1717,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "MountedArcher",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.5,
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 12.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "MountedArcher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -984,6 +1751,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "MountedArcher",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.5,
+      2.5
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 12.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "OxCart",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -997,6 +1782,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Palintonon",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1012,6 +1798,23 @@
     "SiegeRangedDPS": 58.0
   },
   {
+    "Champion": true,
+    "UnitName": "Palintonon",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Palintonon",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1027,6 +1830,23 @@
     "SiegeRangedDPS": 58.0
   },
   {
+    "Champion": true,
+    "UnitName": "Palintonon",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Palintonon",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1042,6 +1862,23 @@
     "SiegeRangedDPS": 58.0
   },
   {
+    "Champion": true,
+    "UnitName": "Palintonon",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Palintonon",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1057,6 +1894,23 @@
     "SiegeRangedDPS": 58.0
   },
   {
+    "Champion": true,
+    "UnitName": "Palintonon",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      5.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Peltast",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1074,6 +1928,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Peltast",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 9.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Priest",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1090,6 +1963,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Priest",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1105,6 +1979,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "PriestessofRa",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1121,6 +1996,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "PriestofPtah",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1137,6 +2013,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "PriestofSet",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1153,6 +2030,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Prodromos",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1169,6 +2047,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Prodromos",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.33,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 20.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Raider",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1185,6 +2081,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Raider",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.46,
+      1.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 13.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Ram",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1201,6 +2115,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Ram",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.83,
+      3.21
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 26.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "RamShip",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1217,6 +2149,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "RamShip",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.5,
+      2.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 30.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "RamShip",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1233,6 +2183,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "RamShip",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      3.3,
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 30.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "RangeScout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1249,6 +2217,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Rhapsode",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1262,6 +2231,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "RoyalGuard",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1278,6 +2248,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "RoyalGuard",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      0.67,
+      0.61
+    ],
+    "HandDPS": 21.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "SacredDeer",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1291,6 +2279,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Sapper",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1309,6 +2298,26 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Sapper",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      2.0,
+      1.58,
+      2.0,
+      2.75
+    ],
+    "HandDPS": 12.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Sarissophoroi",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1326,6 +2335,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Sarissophoroi",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Scout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1342,6 +2370,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Scout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1358,6 +2387,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Scout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1375,6 +2405,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Scout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1391,6 +2422,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Scout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1407,6 +2439,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Scout",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1422,6 +2455,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Seer",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1438,6 +2472,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "ShieldBearer",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1454,6 +2489,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "ShieldBearer",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.96,
+      1.96
+    ],
+    "HandDPS": 7.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "SiegeTower",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1471,6 +2524,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "SiegeTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.83,
+      2.0,
+      2.29
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 32.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "SiegeTower",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1486,6 +2558,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "SiegeTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.33
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 40.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Skirmisher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1502,6 +2591,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Skirmisher",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.67,
+      2.71
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 5.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Slinger",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1518,6 +2625,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Slinger",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.63,
+      1.75
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 6.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Slinger",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1534,6 +2659,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Slinger",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.88,
+      2.08
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 7.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Slinger",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1552,6 +2695,26 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Slinger",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 6.5,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Sparabara",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1567,6 +2730,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Sparabara",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.04
+    ],
+    "HandDPS": 9.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Spearman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1583,6 +2763,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Spearman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.46,
+      1.67
+    ],
+    "HandDPS": 13.75,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Spearman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1599,6 +2797,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Spearman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.0,
+      0.79
+    ],
+    "HandDPS": 12.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Spearman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1618,6 +2834,27 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Spearman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "HandDPS": 10.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Spearman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1637,6 +2874,27 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Spearman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "HandDPS": 11.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Spearman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1653,6 +2911,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Spearman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      0.96,
+      1.58
+    ],
+    "HandDPS": 10.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Spearman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1669,6 +2945,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Spearman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      0.92,
+      0.92
+    ],
+    "HandDPS": 12.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "StoneThrower",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1684,6 +2978,23 @@
     "SiegeRangedDPS": 58.0
   },
   {
+    "Champion": true,
+    "UnitName": "StoneThrower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      4.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 58.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Swanship",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1699,6 +3010,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Swanship",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      3.75
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 60.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Takabara",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1715,6 +3043,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Takabara",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.17,
+      2.17
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 10.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "ThrowingAxeman",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1731,6 +3077,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "ThrowingAxeman",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.32,
+      1.28
+    ],
+    "HandDPS": 7.8,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Toxotes",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1748,6 +3112,25 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Toxotes",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 12.1,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Trireme",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1764,6 +3147,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Trireme",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      3.0,
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Trireme",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1779,6 +3180,23 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Trireme",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      3.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Ulfheðinn",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1795,6 +3213,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "Ulfheðinn",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      2.63,
+      1.17
+    ],
+    "HandDPS": 18.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Villager",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1814,6 +3250,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Villager",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1833,6 +3270,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Villager",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1855,6 +3293,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Villager",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1877,6 +3316,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Villager",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1896,6 +3336,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "Villager",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1915,6 +3356,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "WarChariot",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1931,6 +3373,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "WarChariot",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.67,
+      1.67
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "WarDog",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1947,6 +3407,7 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": false,
     "UnitName": "WarElephant",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1963,6 +3424,24 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "WarElephant",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.0,
+      2.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 23.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "WarWagon",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1979,6 +3458,42 @@
     "SiegeRangedDPS": 0.0
   },
   {
+    "Champion": true,
+    "UnitName": "WarWagon",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      2.3,
+      4.43
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 46.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "WoadRaider",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.58,
+      1.21,
+      1.42
+    ],
+    "HandDPS": 15.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": true,
     "UnitName": "WoadRaider",
     "HandStartAt": 1,
     "SiegeStartAt": 1,

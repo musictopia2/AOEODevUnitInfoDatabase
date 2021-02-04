@@ -1,5 +1,4 @@
 ﻿using CommonBasicStandardLibraries.CollectionClasses;
-using CommonBasicStandardLibraries.Exceptions;
 using Newtonsoft.Json;
 using Phase1DataLibrary.Services;
 using System;
@@ -8,9 +7,10 @@ namespace Phase1DataLibrary.Models
 {
     public class AttackUnitModel
     {
+        public bool Champion { get; set; } //this is now brand new.
         public string UnitName { get; set; } = "";
         [JsonIgnore]
-        public string FullName => $"{Civilization} {UnitName}"; //this means it can do other parts this time.
+        public string FullName => Champion == false ? $"{Civilization} {UnitName}" : $"{Civilization} {UnitName} Champion"; //this means it can do other parts this time.
         public int HandStartAt { get; set; } = 1; //usually starts at 1.
         public int SiegeStartAt { get; set; } = 1;
         public int RangedStartAt { get; set; } = 1;
