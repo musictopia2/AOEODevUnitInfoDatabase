@@ -44,7 +44,7 @@ namespace Phase1Parsing
             {
                 throw new BasicBlankException("Never showed champion in the original.  Rethink");
             }
-            CustomBasicList<FullDatabaseModel> _filteredList = _fullList.Where(xxx => (xxx.Types == "Unit" || xxx.Types == "Damaging Building")).ToCustomBasicList();
+            CustomBasicList<FullDatabaseModel> _filteredList = _fullList.Where(xxx => (xxx.Types == "Unit" || xxx.Tags == "Damaging Building")).ToCustomBasicList();
             //because we can now do champion.
             CustomBasicList<AttackUnitModel> _units = new CustomBasicList<AttackUnitModel>();
             _filteredList.ForEach(full =>
@@ -89,7 +89,11 @@ namespace Phase1Parsing
             {
                 throw new BasicBlankException("Champion was never used.  Rethink");
             }
-            
+            if (_units.Any(xxx => xxx.UnitName == "GuardTower") == false)
+            {
+                throw new BasicBlankException("No guard towers");
+            }
+
 
             await fs.SaveObjectAsync(_phase1Path, _units);
 

@@ -1093,6 +1093,199 @@
   },
   {
     "Champion": false,
+    "UnitName": "FortsiiedTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      0.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 28.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "FortsiiedTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.03
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 28.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "FortsiiedTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 28.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "FortsiiedTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 28.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "FortsiiedTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      0.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 28.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "FortsiiedTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 28.75,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "Fortress",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      0.93
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 83.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "Fortress",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      0.83
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 83.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "Fortress",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      2.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "Fortress",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 83.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "Fortress",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.03
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 50.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "Fortress",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 83.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Galley",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -1156,6 +1349,103 @@
     "HandDPS": 0.0,
     "CavalryDPS": 0.0,
     "RangedDPS": 15.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "GuardTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      0.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "GuardTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.03
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "GuardTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "GuardTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "GuardTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      0.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "GuardTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 25.0,
     "SiegeMeleeDPS": 0.0,
     "SiegeRangedDPS": 0.0
   },
@@ -2995,6 +3285,87 @@
   },
   {
     "Champion": false,
+    "UnitName": "StrongholdTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      0.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 33.0625,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "StrongholdTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 33.0625,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "StrongholdTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0,
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 33.0625,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "StrongholdTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      0.96
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 33.0625,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "StrongholdTower",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 33.0625,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
     "UnitName": "Swanship",
     "HandStartAt": 1,
     "SiegeStartAt": 1,
@@ -3090,6 +3461,102 @@
     "HandDPS": 7.8,
     "CavalryDPS": 0.0,
     "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "TownCenter",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Babylonian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "TownCenter",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "TownCenter",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Egyptian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "TownCenter",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Greek",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "TownCenter",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Norse",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
+    "Champion": false,
+    "UnitName": "TownCenter",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Persian",
+    "AnimationDurations": [
+      1.0
+    ],
+    "HandDPS": 0.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 20.0,
     "SiegeMeleeDPS": 0.0,
     "SiegeRangedDPS": 0.0
   },
