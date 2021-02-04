@@ -16,9 +16,9 @@ namespace Phase1DataLibrary.ViewModels
         }
         public string CivilizationRequested { get; set; } = "";
         public string UnitRequested { get; set; } = "";
-        public CustomBasicList<string> Civilizations { get; private set; }
-        public CustomBasicList<string> UnitStringList { get; private set; }
-        public CustomBasicList<AttackUnitModel> UnitAttackList { get; private set; }
+        public CustomBasicList<string> Civilizations { get; private set; } = new CustomBasicList<string>();
+        public CustomBasicList<string> UnitStringList { get; private set; } = new CustomBasicList<string>();
+        public CustomBasicList<AttackUnitModel> UnitAttackList { get; private set; } = new CustomBasicList<AttackUnitModel>();
         private CustomBasicList<AttackUnitModel> _fullAttackList = new CustomBasicList<AttackUnitModel>();
         public async Task ChoseUnitAsync()
         {
@@ -28,6 +28,7 @@ namespace Phase1DataLibrary.ViewModels
             }
             _fullAttackList = await _service.GetUnitsAsync(UnitRequested);
             UnitAttackList = _fullAttackList.ToCustomBasicList();
+            Civilizations = UnitAttackList.GroupBy(xxx => xxx.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
         }
         public void Clear()
         {

@@ -1,10 +1,51 @@
-﻿@* 
-    
-step 1:  the report will be separate window.
-*@
+﻿@using BasicBlazorLibrary.Components.Layouts.Simple
 @inherits JavascriptComponentBase
-
-
-<button @onclick="NavigateToFullReportAsync" class="btn btn-primary">
-    Full Report
-</button>
+@if (DataContext == null)
+{
+    <div>No datacontext was registered</div>
+    return;
+}
+@if (DataContext.UnitStringList.Count == 0)
+{
+    <div>Loading.....</div>
+    return;
+}
+<LeftOverLayoutComponent>
+    <TopContent>
+        <StackLayout 
+                     Orientation="EnumOrientation.Horizontal"
+                     >
+            <StackItem Length="@_style.Width">
+                <ComboBoxStringList ItemList="DataContext.UnitStringList"
+                                    ComboEnterPressed="ChooseUnitAsync"
+                                    @bind-Value="DataContext.UnitRequested"
+                                    Style="_style"
+                                    @ref="_firstCombo"
+                                    Placeholder="Units" />
+            </StackItem>
+            <StackItem Length="@_style.Width">
+                <ComboBoxStringList ItemList="DataContext.Civilizations"
+                                    ComboEnterPressed="() => DataContext.FilterCivilization()"
+                                    @bind-Value="DataContext.CivilizationRequested"
+                                    @ref="_secondCombo"
+                                    Style="_style"
+                                    Placeholder="Civilization" />
+                                    
+            </StackItem>
+        </StackLayout>
+    </TopContent>
+    <MainContent>
+        @if (DataContext.UnitAttackList.Count > 0)
+        {
+            <UnitListComponent Units="DataContext.UnitAttackList" />
+        }
+    </MainContent>
+    <BottomContent>
+        <button @onclick="ClearAsync" class="btn btn-primary">
+            Clear
+        </button>
+        <button style="margin-left: 2px;" @onclick="NavigateToFullReportAsync" class="btn btn-primary">
+            Full Report
+        </button>
+    </BottomContent>
+</LeftOverLayoutComponent>
