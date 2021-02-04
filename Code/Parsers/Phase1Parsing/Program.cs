@@ -1,5 +1,6 @@
 ﻿using CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 using CommonBasicStandardLibraries.CollectionClasses;
+using CommonBasicStandardLibraries.Exceptions;
 using FirstDataModelLibrary;
 using Phase1DataLibrary.Models;
 using Phase1DataLibrary.Services;
@@ -39,6 +40,10 @@ namespace Phase1Parsing
             _phase1Path = ll.GetLocation(_phase1File);
             _oldSource = ll.GetLocation(fa.FirstParsedExcelDatabase);
             CustomBasicList<FullDatabaseModel> _fullList = await fs.RetrieveSavedObjectAsync<CustomBasicList<FullDatabaseModel>>(_oldSource);
+            if (_fullList.Any(xxx => xxx.Name == "Champion") == false)
+            {
+                throw new BasicBlankException("Never showed champion in the original.  Rethink");
+            }
             CustomBasicList<FullDatabaseModel> _filteredList = _fullList.Where(xxx => (xxx.Types == "Unit" || xxx.Types == "Damaging Building") && xxx.Champion == "Base").ToCustomBasicList();
             CustomBasicList<AttackUnitModel> _units = new CustomBasicList<AttackUnitModel>();
             _filteredList.ForEach(full =>
@@ -74,8 +79,11 @@ namespace Phase1Parsing
                 }
                 _units.Add(attack);
             });
-
-            var list = _units.Where(xxx => xxx.HandDPS > 0 && xxx.SiegeMeleeDPS > 0).ToCustomBasicList();
+            if (_units.Any(xxx => xxx.UnitName == "Champion") ==false)
+            {
+                throw new BasicBlankException("Champion was never used.  Rethink");
+            }
+            
 
             await fs.SaveObjectAsync(_phase1Path, _units);
 

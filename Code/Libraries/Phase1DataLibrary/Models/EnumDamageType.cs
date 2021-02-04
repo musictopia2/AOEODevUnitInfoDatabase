@@ -2,6 +2,6 @@
 {
     public enum EnumDamageType
     {
-        Hand, Cavaltry, Ranged, SiegeMelee, SiegeRanged
+        Hand, Cavaltry, Ranged, SiegeMelee, SiegeRanged, Charge
     }
 }

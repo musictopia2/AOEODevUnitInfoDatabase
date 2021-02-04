@@ -24,7 +24,8 @@ namespace Phase1DataLibrary.Models
         public double CavalryDPA(IAnimationService service) => GetDPA(service, CavalryDPS, EnumDamageType.Cavaltry);
         public double RangedDPA(IAnimationService service) => GetDPA(service, RangedDPS, EnumDamageType.Ranged);
         public double SiegeMeleeDPA(IAnimationService service) => GetDPA(service, SiegeMeleeDPS, EnumDamageType.SiegeMelee);
-        public double SIegeRangedDPA(IAnimationService service) => GetDPA(service, SiegeRangedDPS, EnumDamageType.SiegeRanged);
+        public double SiegeRangedDPA(IAnimationService service) => GetDPA(service, SiegeRangedDPS, EnumDamageType.SiegeRanged);
+        public double ChargeDPA(IAnimationService service) => GetDPA(service, HandDPS, EnumDamageType.Hand);
         private double GetDPA(IAnimationService service, double damage, EnumDamageType category)
         {
             double dps = damage;

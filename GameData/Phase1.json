@@ -365,6 +365,22 @@
     "SiegeRangedDPS": 23.0
   },
   {
+    "UnitName": "Champion",
+    "HandStartAt": 1,
+    "SiegeStartAt": 1,
+    "RangedStartAt": 1,
+    "Civilization": "Celtic",
+    "AnimationDurations": [
+      1.42,
+      2.08
+    ],
+    "HandDPS": 20.0,
+    "CavalryDPS": 0.0,
+    "RangedDPS": 0.0,
+    "SiegeMeleeDPS": 0.0,
+    "SiegeRangedDPS": 0.0
+  },
+  {
     "UnitName": "ChariotArcher",
     "HandStartAt": 1,
     "SiegeStartAt": 1,

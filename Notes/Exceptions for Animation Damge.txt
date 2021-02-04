@@ -37,3 +37,12 @@ as copied.
 
 
 this means the part that does it will need to consider other things.
+
+
+Farbjoðr they can hit infantry : animation 1 and 2 is for crush damage on melee unit so dpa= 36(2.71 +1.92)/2 =83.34, and animations 3 and 4 are for buildings (always true with or without champion upgrade) DPA = 36 (2.96+2.96)/2=106.56 . So for non champion we only need animation 3 and 4 since they just can hit buildings
+so 2 animations total for non champion
+2 animations to hit units in champion same 2 for buildings
+is that clearer?
+
+this is when its champion.
+

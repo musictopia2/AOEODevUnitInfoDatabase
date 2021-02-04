@@ -23,17 +23,33 @@ namespace Phase1DataLibrary.Services
                 possibleAttacks.RemoveAt(3); //for now, remove the mele dps for palins.
             }
             possibleAttacks.RemoveAllAndObtain(xxx => xxx == 0);
-
-            
+            double charge = GetChargeDamage(unit);
+            if (charge > 0)
+            {
+                if (unit.AnimationDurations.Count != 3)
+                {
+                    throw new BasicBlankException("There must be 3 total animations if there is charge attack.  If that is wrong, then needs updating");
+                }
+                if (damage == EnumDamageType.Charge)
+                {
+                    return unit.AnimationDurations.Skip(2).ToCustomBasicList();
+                }
+                else
+                {
+                    return unit.AnimationDurations.Take(2).ToCustomBasicList();
+                }
+            }
+            if (unit.UnitName == "Farbjoðr")
+            {
+                return unit.AnimationDurations.Skip(2).Take(2).ToCustomBasicList();
+                //this has an exception.  for champion, will be different.  but we are not there yet.
+            }
 
             if (possibleAttacks.Count <= 1)
             {
                 return unit.AnimationDurations.ToCustomBasicList();
             }
 
-            //when i get to champions, will change the formulas.
-
-            //this means exceptions.
             if (possibleAttacks.Count == 2)
             {
                 
@@ -111,7 +127,7 @@ namespace Phase1DataLibrary.Services
                     }
                     if (damage == EnumDamageType.SiegeMelee)
                     {
-                        return unit.AnimationDurations.Skip(2).Take(1).ToCustomBasicList();
+                        return unit.AnimationDurations.Take(3).ToCustomBasicList();
                     }
                     return new CustomBasicList<double>();
                 }
@@ -119,6 +135,17 @@ namespace Phase1DataLibrary.Services
             }
             throw new BasicBlankException("Only 1, 2 or 3 possible attacks are supported.   If more are needed, then needs to add more conditions");
         }
+        private static double GetChargeDamage(AttackUnitModel unit)
+        {
+            //the lancers champion has 2.75 charge damage.  the woad raiders does 3.  can eventually get from database
+            if (unit.UnitName == "WoadRaider")
+            {
+                return 3.0;
+            }
+            //champion lancers will have 2.75.
+            return 0.0;
+        }
+
         public Task InitAsync()
         {
             return Task.CompletedTask; //this version will not get data from a database.
