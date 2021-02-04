@@ -12,9 +12,7 @@
 }
 <LeftOverLayoutComponent>
     <TopContent>
-        <StackLayout 
-                     Orientation="EnumOrientation.Horizontal"
-                     >
+        <StackLayout Orientation="EnumOrientation.Horizontal">
             <StackItem Length="@_style.Width">
                 <ComboBoxStringList ItemList="DataContext.UnitStringList"
                                     ComboEnterPressed="ChooseUnitAsync"
@@ -25,12 +23,20 @@
             </StackItem>
             <StackItem Length="@_style.Width">
                 <ComboBoxStringList ItemList="DataContext.Civilizations"
-                                    ComboEnterPressed="() => DataContext.FilterCivilization()"
+                                    ComboEnterPressed="() => FilterCivAsync()"
                                     @bind-Value="DataContext.CivilizationRequested"
                                     @ref="_secondCombo"
                                     Style="_style"
                                     Placeholder="Civilization" />
-                                    
+            </StackItem>
+            <StackItem Length="@_style.Width">
+                <ComboBoxStringList ItemList="DataContext.UpgradeList"
+                                    ComboEnterPressed="() => DataContext.FilterBaseChampion()"
+                                    @bind-Value="DataContext.BaseString"
+                                    @ref="_thirdCombo"
+                                    Style="_style"
+                                    Placeholder="Select Upgrade" />
+
             </StackItem>
         </StackLayout>
     </TopContent>

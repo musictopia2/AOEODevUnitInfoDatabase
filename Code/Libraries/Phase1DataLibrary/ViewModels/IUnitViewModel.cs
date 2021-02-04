@@ -15,9 +15,10 @@ namespace Phase1DataLibrary.ViewModels
         string UnitRequested { get; set; }
         CustomBasicList<string> Civilizations { get; } //based on unit selected.
         string CivilizationRequested { get; set; } //you have the right to request the civilization.
-
+        string BaseString { get; set; }
         CustomBasicList<AttackUnitModel> UnitAttackList { get; } //after choosing the unit.
 
+        CustomBasicList<string> UpgradeList { get; }
 
         //not just one unit though.
 
@@ -29,7 +30,7 @@ namespace Phase1DataLibrary.ViewModels
         Task ChoseUnitAsync();
 
         void FilterCivilization();
-
+        void FilterBaseChampion();
 
 
         //i think that after choosing a unit, you can always choose another unit easily.
