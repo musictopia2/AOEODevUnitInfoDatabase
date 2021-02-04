@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Phase1DataLibrary.Services;
+using Phase1DataLibrary.ViewModels;
 using Phase1Site.Data;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,7 @@ namespace Phase1Site
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<IUnitService, UnitService>(); //for now, this should be fine.
             services.AddSingleton<IAnimationService, AnimationService>();
+            services.AddScoped<IUnitViewModel, UnitViewModel>(); //this one has to be scoped for sure.  so what one person does would not affect another player.
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
