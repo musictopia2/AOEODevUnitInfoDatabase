@@ -8,7 +8,7 @@ namespace Phase1DataLibrary.Services
 {
     public class AnimationService : IAnimationService
     {
-        public CustomBasicList<double> GetAttackAnimations(AttackUnitModel unit, EnumDamageType damage)
+        public CustomBasicList<double> GetAttackAnimations(AttackUnitModel unit, EnumDamageType damage, double charge)
         {
             CustomBasicList<double> possibleAttacks = new CustomBasicList<double>()
             {
@@ -21,9 +21,12 @@ namespace Phase1DataLibrary.Services
             if (unit.UnitName == "Palintonon" || unit.UnitName == "LogThrower" || unit.UnitName == "StoneThrower")
             {
                 possibleAttacks.RemoveAt(3); //for now, remove the mele dps for palins.
+                if (damage == EnumDamageType.SiegeMelee)
+                {
+                    return new CustomBasicList<double>(); //try this way
+                }
             }
             possibleAttacks.RemoveAllAndObtain(xxx => xxx == 0);
-            double charge = GetChargeDamage(unit);
             if (charge > 0)
             {
                 if (unit.AnimationDurations.Count != 3)
@@ -38,6 +41,10 @@ namespace Phase1DataLibrary.Services
                 {
                     return unit.AnimationDurations.Take(2).ToCustomBasicList();
                 }
+            }
+            else if (charge == 0 && damage == EnumDamageType.Charge)
+            {
+                return new CustomBasicList<double>();
             }
             if (unit.UnitName == "Farbjoðr")
             {
@@ -135,7 +142,7 @@ namespace Phase1DataLibrary.Services
             }
             throw new BasicBlankException("Only 1, 2 or 3 possible attacks are supported.   If more are needed, then needs to add more conditions");
         }
-        private static double GetChargeDamage(AttackUnitModel unit)
+        public double GetChargeDamage(AttackUnitModel unit)
         {
             //the lancers champion has 2.75 charge damage.  the woad raiders does 3.  can eventually get from database
             if (unit.UnitName == "WoadRaider")

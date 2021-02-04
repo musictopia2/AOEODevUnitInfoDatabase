@@ -1,4 +1,5 @@
 ﻿using CommonBasicStandardLibraries.CollectionClasses;
+using CommonBasicStandardLibraries.Exceptions;
 using Newtonsoft.Json;
 using Phase1DataLibrary.Services;
 using System;
@@ -25,11 +26,12 @@ namespace Phase1DataLibrary.Models
         public double RangedDPA(IAnimationService service) => GetDPA(service, RangedDPS, EnumDamageType.Ranged);
         public double SiegeMeleeDPA(IAnimationService service) => GetDPA(service, SiegeMeleeDPS, EnumDamageType.SiegeMelee);
         public double SiegeRangedDPA(IAnimationService service) => GetDPA(service, SiegeRangedDPS, EnumDamageType.SiegeRanged);
-        public double ChargeDPA(IAnimationService service) => GetDPA(service, HandDPS, EnumDamageType.Hand);
+        public double ChargeDPA(IAnimationService service) => GetDPA(service, HandDPS, EnumDamageType.Charge);
         private double GetDPA(IAnimationService service, double damage, EnumDamageType category)
         {
             double dps = damage;
-            CustomBasicList<double> animations = service.GetAttackAnimations(this, category);
+            double charge = service.GetChargeDamage(this);
+            CustomBasicList<double> animations = service.GetAttackAnimations(this, category, charge);
             if (animations.Count == 0)
             {
                 return 0;
@@ -38,6 +40,10 @@ namespace Phase1DataLibrary.Models
             double totalAttacks = animations.Count;
             double subs = dps * sumAttacks;
             double output = subs / totalAttacks;
+            if (charge > 0 && category == EnumDamageType.Charge)
+            {
+                output *= charge;
+            }
             output = Math.Round(output, 4);
             return output;
         }

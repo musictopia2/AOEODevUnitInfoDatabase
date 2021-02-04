@@ -77,6 +77,10 @@ namespace Phase1Parsing
                 {
                     attack.SiegeMeleeDPS = double.Parse(full.Damagesiegemeleeattack);
                 }
+                if (full.Name == "Palintonon" || full.Name == "LogThrower" || full.Name == "StoneThrower")
+                {
+                    attack.SiegeMeleeDPS = 0;
+                }
                 _units.Add(attack);
             });
             if (_units.Any(xxx => xxx.UnitName == "Champion") ==false)

@@ -16,6 +16,7 @@
         <td><b>Ranged DPA</b></td>
         <td><b>Siege Melee DPA</b></td>
         <td><b>Siege Ranged DPA</b></td>
+        <td><b>Charge DPA</b></td>
     </tr>
     @foreach (var unit in _units)
     {
@@ -31,6 +32,7 @@
             <td>@unit.RangedDPA(AnimationService)</td>
             <td>@unit.SiegeMeleeDPA(AnimationService)</td>
             <td>@unit.SiegeRangedDPA(AnimationService)</td>
+            <td>@unit.ChargeDPA(AnimationService)</td>
         </tr>
     }
 </table>
