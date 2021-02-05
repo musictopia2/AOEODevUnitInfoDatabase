@@ -9,7 +9,8 @@ namespace Phase2DataLibrary.Models
         [JsonIgnore]
         public string FullName => Champion == false ? $"{Civilization} {UnitName}" : $"{Civilization} {UnitName} Champion"; //this means it can do other parts this time.
         public string Civilization { get; set; } = "";
-        public double DamageBonusProtection { get; set; } //i think.
+        //if there is bonus damage protection, i don't see the data though.
+        //therefore, will do without.  the good news is can always add later if needed.
         public double HitPoints { get; set; }
         public double ArmorHand { get; set; }
         public double ArmorCavalry { get; set; }
