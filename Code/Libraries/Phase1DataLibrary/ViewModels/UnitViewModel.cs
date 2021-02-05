@@ -81,6 +81,20 @@ namespace Phase1DataLibrary.ViewModels
             {
                 throw new BasicBlankException("No need to filter base because not even entered");
             }
+            if (CivilizationRequested != "")
+            {
+                FilterCivilization(); //just in case.
+                if (BaseString == "Champion")
+                {
+                    UnitAttackList.RemoveAllAndObtain(xxx => xxx.Champion == false);
+                    return; 
+                }
+                if (BaseString == "Base")
+                {
+                    UnitAttackList.RemoveAllAndObtain(xxx => xxx.Champion); //should already do the filters
+                    return;
+                }
+            }
             if (BaseString == "Champion")
             {
                 UnitAttackList = _fullAttackList.Where(xxx => xxx.Champion).ToCustomBasicList();

@@ -17,10 +17,10 @@
         <tr>
             <td>@unit.FullName</td>
             <td>@unit.HitPoints</td>
-            <td>@unit.ArmorHand</td>
-            <td>@unit.ArmorCavalry</td>
-            <td>@unit.ArmorRanged</td>
-            <td>@unit.ArmorSiege</td>
+            <td>@Math.Round(unit.ArmorHand, 4)</td>
+            <td>@Math.Round(unit.ArmorCavalry, 4)</td>
+            <td>@Math.Round(unit.ArmorRanged, 4)</td>
+            <td>@Math.Round(unit.ArmorSiege, 4)</td>
         </tr>
     }
 </table>
