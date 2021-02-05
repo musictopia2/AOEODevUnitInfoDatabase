@@ -37,7 +37,10 @@ namespace Phase2Parsing
                 defense.ArmorHand = double.Parse(full.Armorhand);
                 defense.ArmorRanged = double.Parse(full.Armorranged);
                 defense.ArmorSiege = double.Parse(full.Armorsiege);
-                _units.Add(defense);
+                if (defense.HitPoints > 0)
+                {
+                    _units.Add(defense); //if the hit points is 0, then cannot do i think.
+                }
             });
             await fs.SaveObjectAsync(_phase2Path, _units);
         }
