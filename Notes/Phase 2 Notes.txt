@@ -1,0 +1,33 @@
+1.  hit points
+2.  bool (champion)
+3.  name
+4.  civilization
+5.  Melee Inf Armor
+6.  Cavalry Armor
+7.  Piece Armor
+8.  Crush Armor
+9.  Bonus Damage Protection
+
+i think this is the data needed.
+
+this time, will do the following:
+
+a.  report (to look at)
+b.  search.
+
+can do lots of copy/paste.
+
+good news is this is much easier.
+
+steps:
+1.  Parsing Processes
+2.  Filtering
+3.  Report.
+
+Can risk doing all same time.
+since they can click report to show on another screen.
+
+phase 3 will start getting harder (since it has to figure out how to combine phases 1 and 2).
+
+and show results.
+will not show different techs.

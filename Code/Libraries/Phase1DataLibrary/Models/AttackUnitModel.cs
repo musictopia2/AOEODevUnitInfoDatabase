@@ -11,9 +11,6 @@ namespace Phase1DataLibrary.Models
         public string UnitName { get; set; } = "";
         [JsonIgnore]
         public string FullName => Champion == false ? $"{Civilization} {UnitName}" : $"{Civilization} {UnitName} Champion"; //this means it can do other parts this time.
-        public int HandStartAt { get; set; } = 1; //usually starts at 1.
-        public int SiegeStartAt { get; set; } = 1;
-        public int RangedStartAt { get; set; } = 1;
         public string Civilization { get; set; } = "";
         public CustomBasicList<double> AnimationDurations { get; set; } = new CustomBasicList<double>();
         public double HandDPS { get; set; }
