@@ -22,20 +22,20 @@ namespace Phase3DataLibrary.ViewModels
                 "Champion"
             };
         }
-        public CustomBasicList<string> AttackUnitStringList { get; private set; }
-        public CustomBasicList<string> DefenseUnitStringList { get; private set; }
-        public string AttackUnitRequested { get; set; }
-        public string DefenseUnitRequested { get; set; }
-        public CustomBasicList<string> AttackCivilizations { get; private set; }
-        public CustomBasicList<string> DefenseCivilizations { get; private set; }
-        public string AttackCivilizationRequested { get; set; }
-        public string AttackBaseString { get; set; }
-        public string DefenseCivilizationRequested { get; set; }
-        public string DefenseBaseString { get; set; }
-        public CustomBasicList<UnitModel> UnitAttackList { get; private set; }
-        public CustomBasicList<string> AttackUpgradeList { get; private set; }
-        public CustomBasicList<UnitModel> UnitDefenseList { get; private set; }
-        public CustomBasicList<string> DefenseUpgradeList { get; private set; }
+        public CustomBasicList<string> AttackUnitStringList { get; private set; } = new CustomBasicList<string>();
+        public CustomBasicList<string> DefenseUnitStringList { get; private set; } = new();
+        public string AttackUnitRequested { get; set; } = "";
+        public string DefenseUnitRequested { get; set; } = "";
+        public CustomBasicList<string> AttackCivilizations { get; private set; } = new();
+        public CustomBasicList<string> DefenseCivilizations { get; private set; } = new();
+        public string AttackCivilizationRequested { get; set; } = "";
+        public string AttackBaseString { get; set; } = "";
+        public string DefenseCivilizationRequested { get; set; } = "";
+        public string DefenseBaseString { get; set; } = "";
+        public CustomBasicList<UnitModel> UnitAttackList { get; private set; } = new();
+        public CustomBasicList<string> AttackUpgradeList { get; private set; } = new();
+        public CustomBasicList<UnitModel> UnitDefenseList { get; private set; } = new();
+        public CustomBasicList<string> DefenseUpgradeList { get; private set; } = new();
 
         public async Task ChoseAttackUnitAsync()
         {

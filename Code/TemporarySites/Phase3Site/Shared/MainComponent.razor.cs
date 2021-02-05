@@ -11,7 +11,7 @@ namespace Phase3Site.Shared
         private ComboBoxStringList _secondAttackCombo;
         private ComboBoxStringList _thirdAttackCombo;
 
-        private ComboBoxStringList _firstDefenseCombo;
+        //private ComboBoxStringList _firstDefenseCombo;
         private ComboBoxStringList _secondDefenseCombo;
         private ComboBoxStringList _thirdDefenseCombo;
 
@@ -25,7 +25,7 @@ namespace Phase3Site.Shared
             _firstAttackCombo = null;
             _secondAttackCombo = null;
             _thirdAttackCombo = null;
-            _firstDefenseCombo = null;
+            //_firstDefenseCombo = null;
             _secondDefenseCombo = null;
             _thirdDefenseCombo = null;
             _style.Width = "150px";
