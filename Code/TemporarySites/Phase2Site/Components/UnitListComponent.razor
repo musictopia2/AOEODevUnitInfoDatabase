@@ -1,0 +1,26 @@
+﻿@if (Units.Count == 0)
+{
+    <div>Loading.....</div>
+    return;
+}
+<table>
+    <tr>
+        <td><b>Full Unit Name</b></td>
+        <td><b>HP</b></td>
+        <td><b>Melee Infantry Armor</b></td>
+        <td><b>Cavalry Armor</b></td>
+        <td><b>Pierce Armor</b></td>
+        <td><b>Crush Armor</b></td>
+    </tr>
+    @foreach (var unit in Units)
+    {
+        <tr>
+            <td>@unit.FullName</td>
+            <td>@unit.HitPoints</td>
+            <td>@unit.ArmorHand</td>
+            <td>@unit.ArmorCavalry</td>
+            <td>@unit.ArmorRanged</td>
+            <td>@unit.ArmorSiege</td>
+        </tr>
+    }
+</table>

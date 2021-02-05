@@ -1,0 +1,57 @@
+﻿@using BasicBlazorLibrary.Components.Layouts.Simple
+@inherits JavascriptComponentBase
+@if (DataContext == null)
+{
+    <div>No datacontext was registered</div>
+    return;
+}
+@if (DataContext.UnitStringList.Count == 0)
+{
+    <div>Loading.....</div>
+    return;
+}
+<LeftOverLayoutComponent>
+    <TopContent>
+        <StackLayout Orientation="EnumOrientation.Horizontal">
+            <StackItem Length="@_style.Width">
+                <ComboBoxStringList ItemList="DataContext.UnitStringList"
+                                    ComboEnterPressed="ChooseUnitAsync"
+                                    @bind-Value="DataContext.UnitRequested"
+                                    Style="_style"
+                                    @ref="_firstCombo"
+                                    Placeholder="Units" />
+            </StackItem>
+            <StackItem Length="@_style.Width">
+                <ComboBoxStringList ItemList="DataContext.Civilizations"
+                                    ComboEnterPressed="() => FilterCivAsync()"
+                                    @bind-Value="DataContext.CivilizationRequested"
+                                    @ref="_secondCombo"
+                                    Style="_style"
+                                    Placeholder="Civilization" />
+            </StackItem>
+            <StackItem Length="@_style.Width">
+                <ComboBoxStringList ItemList="DataContext.UpgradeList"
+                                    ComboEnterPressed="() => DataContext.FilterBaseChampion()"
+                                    @bind-Value="DataContext.BaseString"
+                                    @ref="_thirdCombo"
+                                    Style="_style"
+                                    Placeholder="Select Upgrade" />
+
+            </StackItem>
+        </StackLayout>
+    </TopContent>
+    <MainContent>
+        @if (DataContext.UnitDefenseList.Count > 0)
+        {
+            <UnitListComponent Units="DataContext.UnitDefenseList" />
+        }
+    </MainContent>
+    <BottomContent>
+        <button @onclick="ClearAsync" class="btn btn-primary">
+            Clear
+        </button>
+        <button style="margin-left: 2px;" @onclick="NavigateToFullReportAsync" class="btn btn-primary">
+            Full Report
+        </button>
+    </BottomContent>
+</LeftOverLayoutComponent>
