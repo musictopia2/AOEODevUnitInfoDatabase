@@ -67,7 +67,7 @@ namespace Phase3DataLibrary.ViewModels
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
             _fullDefenseList = await _service.GetDefenseUnitsAsync(DefenseUnitRequested);
-            UnitDefenseList = _fullAttackList.ToCustomBasicList();
+            UnitDefenseList = _fullDefenseList.ToCustomBasicList();
             DefenseCivilizations = UnitDefenseList.GroupBy(xxx => xxx.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
             if (UnitDefenseList.Any(xxx => xxx.Champion))
             {
@@ -88,6 +88,7 @@ namespace Phase3DataLibrary.ViewModels
             AttackCivilizationRequested = "";
             DefenseCivilizationRequested = "";
             UnitAttackList.Clear();
+            UnitDefenseList.Clear();
             _fullAttackList.Clear();
             _fullDefenseList.Clear();
             AttackCivilizations.Clear();
