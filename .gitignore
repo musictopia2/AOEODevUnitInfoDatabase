@@ -263,3 +263,5 @@ __pycache__/
 /Code/TemporarySites/Phase1Site/Properties/PublishProfiles/AOEOFirstDPAReportTest - Web Deploy.pubxml
 /Code/TemporarySites/Phase1Site/Properties/ServiceDependencies/AOEOFirstDPAReportTest - Web Deploy/profile.arm.json
 /Code/TemporarySites/Phase2Site/Properties/PublishProfiles/AOEOFirstDPAReportTest - Web Deploy.pubxml
+/Code/TemporarySites/Phase3Site/Properties/ServiceDependencies/AOEOFirstDPAReportTest - Web Deploy/profile.arm.json
+/Code/TemporarySites/Phase3Site/Properties/PublishProfiles/AOEOFirstDPAReportTest - Web Deploy.pubxml
