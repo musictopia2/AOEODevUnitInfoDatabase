@@ -1,0 +1,24 @@
+Base DPA (which was already calculated earlier).
+
+first minus the armor of the type (based on percentage).
+if the armor was 1, then no damage obviously.
+
+otherwise, very low damage.
+
+after that we have the bonuses.
+
+lets say the bonus damage is 2.5
+
+but the bonus protection is .5
+i assume the total bonus damage would be 2.5 * bonus damage protection)
+
+then subtract from that.
+in this case, would be 1.25
+
+if bonus damage protection is 1, then no bonus protection no matter what.
+maybe that makes the most sense.
+
+i would propose having a function that returns the total bonus damage.
+
+
+starts with siege means its artillery.

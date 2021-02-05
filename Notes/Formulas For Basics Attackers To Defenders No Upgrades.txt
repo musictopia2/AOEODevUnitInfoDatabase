@@ -1,0 +1,54 @@
+// True damage dealt to the target = true DPA
+Average animation duration
+Discrepancy
+Moment of attack (in seconds) = moment of attack in the data base (%) * animation duration
+Number of animations to kill.
+Time to kill (TTK).
+//
+
+// before calculations it needs to check if the attacker has a bonus on the target
+// for each type of DPA
+// exeption If attacker is Throwing AxemanChampion then armor target = armor target*0.6
+// true for all armor type
+True DPA= 
+(DPA - (Armortarget * DPA)) * (Target bonus damage protection * bonus of the attacking unit)
+
+
+
+example:
+so for example a babylonian spearman standard (attacker) to a babylonian villager ( target)
+
+
+so for babylonian spearman standard (attacker) to a babylonian villager ( target): true hand DPA = ( hand DPA - (meleeInfArmortarget *  hand DPA)) * (bonus of the attacking unit-Target bonus damage protection * bonus of the attacking unit) = (17.2-(017.2))(0-0*0) = 17.22  //// then number of animations to kill = target HP / true DPA =150/17,22=8,7
+
+excel showed 17.22 for damage type 1.
+there are 3 possible damage types.
+number of animations was 8.7
+
+champion:
+21.52
+7.0 (number of animations).
+
+its called average dpa (average number of animation(s) to kill the target.
+
+
+
+
+or let's say standard immortal vs axeman true hand DPA = ( hand DPA - (meleeInfArmortarget *  hand DPA)) * (bonus of the attacking unit-Target bonus damage protection * bonus of the attacking unit) = (27.625 - (0,3 * 27.625))(2.5 - 0 * 2.5) = 48,34375  //// then number of animations to kill = target HP -> true DPA =185/ 48,34375=3,8 ///// then for let's say standard immortal vs axeman true hand DPA = ( ranged DPA - (pierceArmortarget *  ranged DPA)) * (bonus of the attacking unit-Target bonus damage protection * bonus of the attacking unit) = (37,2-(0 * 37,2)) * (2,5 - 0 * 2.5) = 93  //// then number of animations to kill = target HP -> true DPA =185/ 93=2
+
+
+
+immortal to axeman:
+48.34, 3.8 type 1
+93, 2.0 type 2
+both for base and champion.
+
+
+DPA = ( pierce DPA - (pierceArmortarget *  pierce DPA)) * (bonus of the attacking unit-Target bonus damage protection * bonus of the attacking unit) = (6 - (0,3 * 6))(3- 0 * 3) = 12.6  //// then number of animations to kill = target HP -> true DPA =90/ 12.6=7.1428571429
+
+
+
+fireships
+egy fireship DPA = ( crushrange DPA - (siegeArmortarget *  crushrange DPA)) * (bonus of the attacking unit-Target bonus damage protection * bonus of the attacking unit) = (93.20 - (0,5 * 93.2))(2- 0,5 * 2) = 186,4  //// then number of animations to kill = target HP / true DPA =680/ 186,4=3.6
+
+

@@ -1,0 +1,36 @@
+The most important part of this phase is bonus damage.
+
+Also armor.
+
+Step 1 is bonus damage.
+
+there are the following types:
+
+"Damagebonusabstractinfantry": "2.00",
+    "Damagebonusabstractarcher": "1.00",
+    "Damagebonusabstractcavalry": "1.00",
+    "Damagebonusbuilding": "2.50",
+    "Damagebonusship": "1.00",
+    "Damagebonusabstractartillery": "1.00",
+    "Damagebonusabstractpriest": "1.00",
+    "Damagebonusunittypevillager1": "1.00",
+    "Damagebonusgr_cav_sarissophoroi": "1.00",
+    "Damagebonushuntable": "1.00",
+    "Damagebonusunittypebldgstorehouse": "1.00",
+
+this is what the attacker does.
+
+for ship, if tag is "Ship" then use ship bonus damage.
+
+the bonus damage depends on who the target is.
+
+
+for sais, if the attacker does bonus damage against it,
+then consider no other bonus damages.
+
+if storehouse, then that overrides all others.
+
+if the attacker does bonus damage against storehouses, then would not consider anything else.
+
+
+for building if tag contains the words building, then we can do that.

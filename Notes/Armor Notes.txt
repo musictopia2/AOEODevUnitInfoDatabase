@@ -1,0 +1,24 @@
+For armor, the types of armors provided are:
+1.  hand
+2.  Cavalry
+3.  Ranged
+4.  Siege
+
+For armor, if the armor is 0, then means armor protection is 0.
+
+I propose calculating the armor protection.
+
+which gets subtracted from the dpa.
+
+if 0, then means somehow no damage.
+
+
+This requires an attacker and the defender.
+
+the defender uses armor to take less damage.
+
+the defender needs to know the type of the attacker.
+
+for this part, there are 4 categories.
+
+means a function is needed to calculate the AttackArmorCategory
