@@ -19,6 +19,7 @@ namespace Phase3DataLibrary.Models
         public double RangedDPS { get; set; }
         public double SiegeMeleeDPS { get; set; }
         public double SiegeRangedDPS { get; set; }
+        public double BonusDamageProtection { get; set; }
         public double HandDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, HandDPS, EnumDamageType.Hand);
         public double CavalryDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, CavalryDPS, EnumDamageType.Cavaltry);
         public double RangedDPA(IAnimationService aService, IDamageExceptionService dService) => GetDPA(aService, dService, RangedDPS, EnumDamageType.Ranged);

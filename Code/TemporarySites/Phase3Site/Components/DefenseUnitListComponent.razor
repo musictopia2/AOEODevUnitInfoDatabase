@@ -11,6 +11,7 @@
         <td><b>Cavalry Armor</b></td>
         <td><b>Pierce Armor</b></td>
         <td><b>Crush Armor</b></td>
+        <td><b>Bonus Damage Protection</b></td>
     </tr>
     @foreach (var unit in Units)
     {
@@ -21,6 +22,7 @@
             <td>@Math.Round(unit.ArmorCavalry, 4)</td>
             <td>@Math.Round(unit.ArmorRanged, 4)</td>
             <td>@Math.Round(unit.ArmorSiege, 4)</td>
+            <td>@Math.Round(unit.BonusDamageProtection, 4)</td>
         </tr>
     }
 </table>

@@ -41,6 +41,7 @@ namespace Phase3Parsing
                 unit.ArmorHand = double.Parse(full.Armorhand);
                 unit.ArmorRanged = double.Parse(full.Armorranged);
                 unit.ArmorSiege = double.Parse(full.Armorsiege);
+                unit.BonusDamageProtection = double.Parse(full.Bdp);
                 if (full.Types == "Unit" || full.Tags == "Damaging Building")
                 {
                     unit.IsAttacker = true;
