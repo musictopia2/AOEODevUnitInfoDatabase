@@ -5,6 +5,7 @@ namespace Phase4DataLibrary.ViewModels
     public interface IAttackResultsViewModel
     {
         CustomBasicList<AttackResultsModel> GetAttackResults(CustomBasicList<UnitModel> attackingUnits, CustomBasicList<UnitModel> defendingUnits);
-        CustomBasicList<AttackResultsModel> GetAttackResults(); //this will be the full report.
+        //decided to be just one method.  this means if a report is needed, then whoever calls it is responsible for doing the list of attacking units and defending units.
+
     }
 }
