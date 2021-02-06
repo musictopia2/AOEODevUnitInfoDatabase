@@ -56,6 +56,10 @@ namespace Phase4DataLibrary.ViewModels
                 damageCat = EnumDamageType.Hand;
                 armorCat = UnitModel.GetDefenseArmorCategory(damageCat);
                 armorProtectionPercent = defendingUnit.GetArmorProtection(armorCat);
+                if (attackingUnit.Champion && attackingUnit.UnitName == "ThrowingAxeman" && armorProtectionPercent > 0)
+                {
+                    armorProtectionPercent *= .6;
+                }
                 armorProtectionAmount = armorProtectionPercent * handdpa;
                 dpaMinusArmor = handdpa - armorProtectionAmount;
                 adjustedAmount = dpaMinusArmor * bonusPecentage;

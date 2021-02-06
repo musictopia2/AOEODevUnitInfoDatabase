@@ -64,7 +64,7 @@ namespace Phase4DataLibrary.Helpers
             {
                 return EnumBonusCategory.Artillery;
             }
-            if (attackingUnit.DamageBonusAbstractArcher.HasBonusDamage() && defendingUnit.Tags == "")
+            if (attackingUnit.DamageBonusAbstractArcher.HasBonusDamage() && defendingUnit.Tags == "Ranged")
             {
                 return EnumBonusCategory.Archer;
             }
