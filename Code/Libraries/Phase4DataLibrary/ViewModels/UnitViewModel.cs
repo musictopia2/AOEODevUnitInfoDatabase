@@ -5,7 +5,7 @@ using Phase4DataLibrary.Models;
 using Phase4DataLibrary.Services;
 using System.Linq;
 using System.Threading.Tasks;
-namespace Phase3DataLibrary.ViewModels
+namespace Phase4DataLibrary.ViewModels
 {
     public class UnitViewModel : IUnitViewModel
     {
@@ -40,47 +40,31 @@ namespace Phase3DataLibrary.ViewModels
         public async Task ChoseAttackUnitAsync()
         {
             if (string.IsNullOrWhiteSpace(AttackUnitRequested))
-            {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
-            }
             _fullAttackList = await _service.GetAttackUnitsAsync(AttackUnitRequested);
             UnitAttackList = _fullAttackList.ToCustomBasicList();
             AttackCivilizations = UnitAttackList.GroupBy(xxx => xxx.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
             if (UnitAttackList.Any(xxx => xxx.Champion))
-            {
                 AttackUpgradeList = _upgrades.ToCustomBasicList();
-            }
             else
-            {
                 AttackUpgradeList = new CustomBasicList<string>(); //because no need to select if no choices.
-            }
             if (AttackCivilizations.Count == 1)
-            {
                 AttackCivilizations = new CustomBasicList<string>(); //seems silly to choose civilzation if there is only one civilization.
-            }
         }
 
         public async Task ChoseDefenseUnitAsync()
         {
             if (string.IsNullOrWhiteSpace(DefenseUnitRequested))
-            {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
-            }
             _fullDefenseList = await _service.GetDefenseUnitsAsync(DefenseUnitRequested);
             UnitDefenseList = _fullDefenseList.ToCustomBasicList();
             DefenseCivilizations = UnitDefenseList.GroupBy(xxx => xxx.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
             if (UnitDefenseList.Any(xxx => xxx.Champion))
-            {
                 DefenseUpgradeList = _upgrades.ToCustomBasicList();
-            }
             else
-            {
                 DefenseUpgradeList = new CustomBasicList<string>(); //because no need to select if no choices.
-            }
             if (DefenseCivilizations.Count == 1)
-            {
                 DefenseCivilizations = new CustomBasicList<string>(); //seems silly to choose civilzation if there is only one civilization.
-            }
         }
 
         public void Clear()
@@ -104,9 +88,7 @@ namespace Phase3DataLibrary.ViewModels
         public void FilterAttackBaseChampion()
         {
             if (AttackBaseString == "")
-            {
                 throw new BasicBlankException("No need to filter base because not even entered");
-            }
             if (AttackCivilizationRequested != "")
             {
                 FilterAttackCivilization(); //just in case.
@@ -142,9 +124,7 @@ namespace Phase3DataLibrary.ViewModels
         public void FilterDefenseBaseChampion()
         {
             if (DefenseBaseString == "")
-            {
                 throw new BasicBlankException("No need to filter base because not even entered");
-            }
             if (DefenseCivilizationRequested != "")
             {
                 FilterDefenseCivilization(); //just in case.

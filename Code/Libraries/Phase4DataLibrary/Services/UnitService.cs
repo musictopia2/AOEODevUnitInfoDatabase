@@ -2,12 +2,11 @@
 using CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions;
 using CommonBasicStandardLibraries.CollectionClasses;
 using Phase4DataLibrary.Models;
-using Phase4DataLibrary.Services;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using js = CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.JsonSerializers.NewtonJsonStrings;
-namespace Phase3DataLibrary.Services
+namespace Phase4DataLibrary.Services
 {
     public class UnitService : IUnitService
     {
@@ -21,9 +20,7 @@ namespace Phase3DataLibrary.Services
         private async Task GetAllUnitsAsync()
         {
             if (_allUnits.Count > 0)
-            {
                 return; //because we already have now.
-            }
             string text = await _a.ResourcesAllTextFromFileAsync(_fileName);
             _allUnits = await js.DeserializeObjectAsync<CustomBasicList<UnitModel>>(text);
             _allUnits = _allUnits.OrderBy(xxx => xxx.UnitName).ToCustomBasicList(); //this will sort.  i think its best to let this one sort.

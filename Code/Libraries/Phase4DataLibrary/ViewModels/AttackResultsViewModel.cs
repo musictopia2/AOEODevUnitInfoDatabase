@@ -3,6 +3,8 @@ using CommonBasicStandardLibraries.Exceptions;
 using Phase4DataLibrary.Helpers;
 using Phase4DataLibrary.Models;
 using Phase4DataLibrary.Services;
+using System.Threading.Tasks;
+
 namespace Phase4DataLibrary.ViewModels
 {
     public class AttackResultsViewModel : IAttackResultsViewModel
@@ -134,6 +136,12 @@ namespace Phase4DataLibrary.ViewModels
                 output.Add(results);
             }
             return output;
+        }
+
+        public async Task InitAsync()
+        {
+            await _damageService.InitAsync();
+            await _animationService.InitAsync();
         }
     }
 }
