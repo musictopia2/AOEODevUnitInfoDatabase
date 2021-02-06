@@ -64,7 +64,7 @@ namespace Phase4DataLibrary.ViewModels
                     throw new BasicBlankException($"The damage cannot be 0 for hand dpa since originally was not 0.  attacking unit {attackingUnit.UnitName} and defending unit {defendingUnit.UnitName}.  Rethink");
                 }
                 animationsNeeded = defendingUnit.HitPoints / adjustedAmount;
-                results = new AttackResultsModel("Hand", attackingUnit.UnitName, defendingUnit.UnitName, adjustedAmount, animationsNeeded);
+                results = new AttackResultsModel("Hand", attackingUnit.FullName, defendingUnit.FullName, adjustedAmount, animationsNeeded);
                 output.Add(results);
             }
             if (cavdpa != 0)
@@ -81,7 +81,7 @@ namespace Phase4DataLibrary.ViewModels
                     throw new BasicBlankException($"The damage cannot be 0 for cav dpa since originally was not 0.  attacking unit {attackingUnit.UnitName} and defending unit {defendingUnit.UnitName}.  Rethink");
                 }
                 animationsNeeded = defendingUnit.HitPoints / adjustedAmount;
-                results = new AttackResultsModel("Cavalry", attackingUnit.UnitName, defendingUnit.UnitName, adjustedAmount, animationsNeeded);
+                results = new AttackResultsModel("Cavalry", attackingUnit.FullName, defendingUnit.FullName, adjustedAmount, animationsNeeded);
                 output.Add(results);
             }
             if (rangeddpa != 0)
@@ -98,7 +98,7 @@ namespace Phase4DataLibrary.ViewModels
                     throw new BasicBlankException($"The damage cannot be 0 for ranged dpa since originally was not 0.  attacking unit {attackingUnit.UnitName} and defending unit {defendingUnit.UnitName}.  Rethink");
                 }
                 animationsNeeded = defendingUnit.HitPoints / adjustedAmount;
-                results = new AttackResultsModel("Ranged", attackingUnit.UnitName, defendingUnit.UnitName, adjustedAmount, animationsNeeded);
+                results = new AttackResultsModel("Ranged", attackingUnit.FullName, defendingUnit.FullName, adjustedAmount, animationsNeeded);
                 output.Add(results);
             }
             if (siegemeleedpa != 0)
@@ -115,7 +115,7 @@ namespace Phase4DataLibrary.ViewModels
                     throw new BasicBlankException($"The damage cannot be 0 for siege melle dpa since originally was not 0.  attacking unit {attackingUnit.UnitName} and defending unit {defendingUnit.UnitName}.  Rethink");
                 }
                 animationsNeeded = defendingUnit.HitPoints / adjustedAmount;
-                results = new AttackResultsModel("Siege Melee", attackingUnit.UnitName, defendingUnit.UnitName, adjustedAmount, animationsNeeded);
+                results = new AttackResultsModel("Siege Melee", attackingUnit.FullName, defendingUnit.FullName, adjustedAmount, animationsNeeded);
                 output.Add(results);
             }
             if (siegerangeddpa != 0)
@@ -132,7 +132,7 @@ namespace Phase4DataLibrary.ViewModels
                     throw new BasicBlankException($"The damage cannot be 0 for siege ranged since originally was not 0.  attacking unit {attackingUnit.UnitName} and defending unit {defendingUnit.UnitName}.  Rethink");
                 }
                 animationsNeeded = defendingUnit.HitPoints / adjustedAmount;
-                results = new AttackResultsModel("Siege Ranged", attackingUnit.UnitName, defendingUnit.UnitName, adjustedAmount, animationsNeeded);
+                results = new AttackResultsModel("Siege Ranged", attackingUnit.FullName, defendingUnit.FullName, adjustedAmount, animationsNeeded);
                 output.Add(results);
             }
             return output;
