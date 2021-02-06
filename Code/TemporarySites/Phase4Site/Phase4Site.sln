@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase4Site", "Phase4Site.csproj", "{2477F096-9975-440E-96A4-DA5F67EFC371}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phase4Site", "Phase4Site.csproj", "{2477F096-9975-440E-96A4-DA5F67EFC371}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phase4DataLibrary", "..\..\Libraries\Phase4DataLibrary\Phase4DataLibrary.csproj", "{3C89734A-5AAB-4B39-A54B-F745F948603D}"
 EndProject
