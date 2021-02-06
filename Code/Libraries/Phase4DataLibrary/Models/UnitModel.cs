@@ -57,7 +57,7 @@ namespace Phase4DataLibrary.Models
 
         //now extras so the final calculations can be done.
         public string Tags { get; set; } = ""; //this is needed too now for the final calculations.
-        public double DamageBonusAbstractinfantry { get; set; }
+        public double DamageBonusAbstractInfantry { get; set; }
         public double DamageBonusAbstractArcher { get; set; }
         public double DamageBonusAbstractCavalry { get; set; }
         public double DamageBonusBuilding { get; set; }
@@ -67,5 +67,15 @@ namespace Phase4DataLibrary.Models
         public double DamageBonusUnitTypeVillager { get; set; }
         public double DamageBonusGr_Cav_Sarissophoroi { get; set; }
         public double DamageBonusUnitTypeBldgStorehouse { get; set; }
+        internal static EnumArmorCategory GetDefenseArmorCategory(EnumDamageType damageCategory) //belongs here.
+        {
+            return damageCategory switch
+            {
+                EnumDamageType.Cavaltry => EnumArmorCategory.Cavalry,
+                EnumDamageType.Hand => EnumArmorCategory.Hand,
+                EnumDamageType.Ranged => EnumArmorCategory.Ranged,
+                _ => EnumArmorCategory.Siege
+            };
+        }
     }
 }

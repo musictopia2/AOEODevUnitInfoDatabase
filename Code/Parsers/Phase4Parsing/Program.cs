@@ -40,7 +40,7 @@ namespace Phase4Parsing
                 unit.DamageBonusAbstractArcher = double.Parse(full.Damagebonusabstractarcher);
                 unit.DamageBonusAbstractArtillery = double.Parse(full.Damagebonusabstractartillery);
                 unit.DamageBonusAbstractCavalry = double.Parse(full.Damagebonusabstractcavalry);
-                unit.DamageBonusAbstractinfantry = double.Parse(full.Damagebonusabstractinfantry);
+                unit.DamageBonusAbstractInfantry = double.Parse(full.Damagebonusabstractinfantry);
                 unit.DamageBonusAbstractPriest = double.Parse(full.Damagebonusabstractpriest);
                 unit.DamageBonusBuilding = double.Parse(full.Damagebonusbuilding);
                 unit.DamageBonusGr_Cav_Sarissophoroi = double.Parse(full.Damagebonusgr_cav_sarissophoroi);
