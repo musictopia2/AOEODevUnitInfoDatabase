@@ -38,7 +38,7 @@ namespace Phase5Site
             //since this has to communicate with the stats now.
             //services.AddScoped<IUnitViewModel, UnitViewModel>();
             services.AddScoped<IAttackResultsViewModel, AttackResultsViewModel>();
-
+            services.AddScoped<ICalculateUnitStatService, CalculateUnitStatService>();
             services.AddScoped<TechListContainer, TechListContainer>();
         }
 

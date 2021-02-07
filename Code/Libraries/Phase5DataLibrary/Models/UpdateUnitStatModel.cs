@@ -17,8 +17,8 @@
                 _ => EnumArmorCategory.Siege
             };
         }
-
         public IBasicUnit BasicUnit { get; set; }
+        internal IOriginalUnit OriginalUnit { get; set; }
         //this will not care about original damage.  since this is the calculated version.
         public double HandDPS { get; set; }
         public double CavalryDPS { get; set; }
@@ -45,5 +45,6 @@
         public double RangedDPA { get; set; }
         public double SiegeMeleeDPA { get; set; }
         public double SiegeRangedDPA { get; set; }
+        public double ChargeDPA { get; set; }
     }
 }
