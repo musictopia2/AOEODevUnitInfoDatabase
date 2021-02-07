@@ -30,6 +30,7 @@ namespace Phase5Site
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<IUnitService, UnitService>(); //for now, this should be fine.
+            services.AddSingleton<ITechService, TechService>();
             services.AddSingleton<IAnimationService, AnimationService>();
             services.AddSingleton<IDamageExceptionService, DamageExceptionService>();
             //can't do the unitviewmodel until something handles the stats.

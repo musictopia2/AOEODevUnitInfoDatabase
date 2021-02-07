@@ -20,7 +20,9 @@ namespace Phase5DataLibrary.Services
         private async Task GetAllUnitsAsync()
         {
             if (_allUnits.Count > 0)
+            {
                 return; //because we already have now.
+            }
             string text = await _a.ResourcesAllTextFromFileAsync(_fileName);
             _allUnits = await js.DeserializeObjectAsync<CustomBasicList<UnitModel>>(text);
             _allUnits = _allUnits.OrderBy(xxx => xxx.UnitName).ToCustomBasicList(); //this will sort.  i think its best to let this one sort.
