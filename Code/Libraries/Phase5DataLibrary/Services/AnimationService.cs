@@ -9,7 +9,7 @@ namespace Phase5DataLibrary.Services
     public class AnimationService : IAnimationService
     {
         //good news is this part is the same.  the changes has to do with calculating the values used before getting to this.
-        public CustomBasicList<double> GetAttackAnimations(UnitCalculatedModel unit, EnumDamageType damage, double charge)
+        public CustomBasicList<double> GetAttackAnimations(UpdateUnitStatModel unit, EnumDamageType damage, double charge)
         {
             //for now, do base.  has to change though (when ready wil ldo.
             CustomBasicList<double> possibleAttacks = new CustomBasicList<double>()
@@ -168,7 +168,7 @@ namespace Phase5DataLibrary.Services
             }
             throw new BasicBlankException("Only 1, 2 or 3 possible attacks are supported.   If more are needed, then needs to add more conditions");
         }
-        public double GetChargeDamage(UnitCalculatedModel unit)
+        public double GetChargeDamage(UpdateUnitStatModel unit)
         {
             //the lancers champion has 2.75 charge damage.  the woad raiders does 3.  can eventually get from database
             if (unit.BasicUnit.UnitName == "WoadRaider")

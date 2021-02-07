@@ -13,7 +13,7 @@ namespace Phase5DataLibrary.Helpers
             return true;
         }
 
-        public static EnumBonusCategory GetAttackBonusCategory(this UnitCalculatedModel attackingUnit, UnitCalculatedModel defendingUnit)
+        public static EnumBonusCategory GetAttackBonusCategory(this UpdateUnitStatModel attackingUnit, UpdateUnitStatModel defendingUnit)
         {
             //first do the exceptions.
             if (attackingUnit.DamageBonusGr_Cav_Sarissophoroi.HasBonusDamage() && defendingUnit.BasicUnit.UnitName == "Sarissophoroi")
@@ -41,7 +41,7 @@ namespace Phase5DataLibrary.Helpers
 
 
         //hopefully siege melee is still siege armor.  that can be iffy.
-        public static double GetArmorProtection(this UnitCalculatedModel defendingUnit, EnumArmorCategory armor)
+        public static double GetArmorProtection(this UpdateUnitStatModel defendingUnit, EnumArmorCategory armor)
         {
             return armor switch
             {
@@ -52,7 +52,7 @@ namespace Phase5DataLibrary.Helpers
                 _ => 0
             };
         }
-        public static double BonusDamagePercentage(this UnitCalculatedModel attackingUnit, EnumBonusCategory category, UnitCalculatedModel defendingUnit)
+        public static double BonusDamagePercentage(this UpdateUnitStatModel attackingUnit, EnumBonusCategory category, UpdateUnitStatModel defendingUnit)
         {
             if (defendingUnit.BasicUnit.BonusDamageProtection == 1)
                 return 1; //hopefully this will work (?)
@@ -65,7 +65,7 @@ namespace Phase5DataLibrary.Helpers
             double output = raws * defendingUnit.BasicUnit.BonusDamageProtection;
             return output;
         }
-        private static double BonusAmountAlone(this UnitCalculatedModel attackingUnit, EnumBonusCategory category)
+        private static double BonusAmountAlone(this UpdateUnitStatModel attackingUnit, EnumBonusCategory category)
         {
             return category switch
             {

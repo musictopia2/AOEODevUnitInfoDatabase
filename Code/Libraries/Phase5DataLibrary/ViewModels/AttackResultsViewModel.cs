@@ -9,7 +9,7 @@ namespace Phase5DataLibrary.ViewModels
     public class AttackResultsViewModel : IAttackResultsViewModel
     {
         
-        public CustomBasicList<AttackResultsModel> GetAttackResults(CustomBasicList<UnitCalculatedModel> attackingUnits, CustomBasicList<UnitCalculatedModel> defendingUnits)
+        public CustomBasicList<AttackResultsModel> GetAttackResults(CustomBasicList<UpdateUnitStatModel> attackingUnits, CustomBasicList<UpdateUnitStatModel> defendingUnits)
         {
             CustomBasicList<AttackResultsModel> output = new();
             attackingUnits.ForEach(attack =>
@@ -22,7 +22,7 @@ namespace Phase5DataLibrary.ViewModels
             });
             return output;
         }
-        private static CustomBasicList<AttackResultsModel> GetAttackResults(UnitCalculatedModel attackingUnit, UnitCalculatedModel defendingUnit)
+        private static CustomBasicList<AttackResultsModel> GetAttackResults(UpdateUnitStatModel attackingUnit, UpdateUnitStatModel defendingUnit)
         {
             CustomBasicList<AttackResultsModel> output = new();
             EnumDamageType damageCat;
@@ -41,7 +41,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 //this is hand damage.
                 damageCat = EnumDamageType.Hand;
-                armorCat = UnitCalculatedModel.GetDefenseArmorCategory(damageCat);
+                armorCat = UpdateUnitStatModel.GetDefenseArmorCategory(damageCat);
                 armorProtectionPercent = defendingUnit.GetArmorProtection(armorCat);
                 if (attackingUnit.BasicUnit.Champion && attackingUnit.BasicUnit.UnitName == "ThrowingAxeman" && armorProtectionPercent > 0)
                 {
@@ -62,7 +62,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 //this is cav damage.
                 damageCat = EnumDamageType.Cavaltry;
-                armorCat = UnitCalculatedModel.GetDefenseArmorCategory(damageCat);
+                armorCat = UpdateUnitStatModel.GetDefenseArmorCategory(damageCat);
                 armorProtectionPercent = defendingUnit.GetArmorProtection(armorCat);
                 armorProtectionAmount = armorProtectionPercent * attackingUnit.CavalryDPA;
                 dpaMinusArmor = attackingUnit.CavalryDPA - armorProtectionAmount;
@@ -79,7 +79,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 //this is range damage
                 damageCat = EnumDamageType.Ranged;
-                armorCat = UnitCalculatedModel.GetDefenseArmorCategory(damageCat);
+                armorCat = UpdateUnitStatModel.GetDefenseArmorCategory(damageCat);
                 armorProtectionPercent = defendingUnit.GetArmorProtection(armorCat);
                 armorProtectionAmount = armorProtectionPercent * attackingUnit.RangedDPA;
                 dpaMinusArmor = attackingUnit.RangedDPA - armorProtectionAmount;
@@ -96,7 +96,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 //this is siege melee
                 damageCat = EnumDamageType.SiegeMelee;
-                armorCat = UnitCalculatedModel.GetDefenseArmorCategory(damageCat);
+                armorCat = UpdateUnitStatModel.GetDefenseArmorCategory(damageCat);
                 armorProtectionPercent = defendingUnit.GetArmorProtection(armorCat);
                 armorProtectionAmount = armorProtectionPercent * attackingUnit.SiegeMeleeDPA;
                 dpaMinusArmor = attackingUnit.SiegeMeleeDPA - armorProtectionAmount;
@@ -113,7 +113,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 //this is siege ranged.
                 damageCat = EnumDamageType.SiegeRanged;
-                armorCat = UnitCalculatedModel.GetDefenseArmorCategory(damageCat);
+                armorCat = UpdateUnitStatModel.GetDefenseArmorCategory(damageCat);
                 armorProtectionPercent = defendingUnit.GetArmorProtection(armorCat);
                 armorProtectionAmount = armorProtectionPercent * attackingUnit.SiegeRangedDPA;
                 dpaMinusArmor = attackingUnit.SiegeRangedDPA - armorProtectionAmount;

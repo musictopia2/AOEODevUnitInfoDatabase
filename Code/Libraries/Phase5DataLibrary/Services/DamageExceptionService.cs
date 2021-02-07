@@ -4,7 +4,7 @@ namespace Phase5DataLibrary.Services
 {
     public class DamageExceptionService : IDamageExceptionService
     {
-        public double GetDamage(UnitCalculatedModel unit, double damage, EnumDamageType category)
+        public double GetDamage(UpdateUnitStatModel unit, double damage, EnumDamageType category)
         {
             if (unit.BasicUnit.UnitName == "Sapper" && category == EnumDamageType.SiegeMelee)
                 return unit.HandDPS;

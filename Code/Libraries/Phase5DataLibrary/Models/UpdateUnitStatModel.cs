@@ -4,7 +4,7 @@
     /// this is intended to show the final results.
     /// the purpose of doing this way is so i don't have to calculate the same stuff over and over.  should do just once.
     /// </summary>
-    public class UnitCalculatedModel
+    public class UpdateUnitStatModel
     {
         public string FullName => BasicUnit.Champion == false ? $"{BasicUnit.Civilization} {BasicUnit.UnitName}" : $"{BasicUnit.Civilization} {BasicUnit.UnitName} Champion"; //this means it can do other parts this time.
         internal static EnumArmorCategory GetDefenseArmorCategory(EnumDamageType damageCategory) //belongs here.

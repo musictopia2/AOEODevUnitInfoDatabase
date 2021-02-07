@@ -15,9 +15,9 @@ namespace Phase5DataLibrary.ViewModels
         string AttackBaseString { get; set; }
         string DefenseCivilizationRequested { get; set; } //you have the right to request the civilization.
         string DefenseBaseString { get; set; }
-        CustomBasicList<UnitCalculatedModel> UnitAttackList { get; } //after choosing the unit.
+        CustomBasicList<UpdateUnitStatModel> UnitAttackList { get; } //after choosing the unit.
         CustomBasicList<string> AttackUpgradeList { get; }
-        CustomBasicList<UnitCalculatedModel> UnitDefenseList { get; } //after choosing the unit.
+        CustomBasicList<UpdateUnitStatModel> UnitDefenseList { get; } //after choosing the unit.
         CustomBasicList<string> DefenseUpgradeList { get; }
         Task InitAsync();
         void Clear(); //you have the ability to clear out to start over again.  clears both.

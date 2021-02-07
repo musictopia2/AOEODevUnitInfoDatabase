@@ -10,11 +10,11 @@ namespace Phase5DataLibrary.ViewModels
     public class UnitViewModel : IUnitBaseViewModel
     {
         private readonly IUnitService _unitService;
-        private readonly ICalculatedUnitService _calculatedUnitService;
+        private readonly ICalculateUnitStatService _calculatedUnitService;
         private readonly CustomBasicList<string> _upgrades = new CustomBasicList<string>();
-        private CustomBasicList<UnitCalculatedModel> _fullAttackList = new CustomBasicList<UnitCalculatedModel>();
-        private CustomBasicList<UnitCalculatedModel> _fullDefenseList = new CustomBasicList<UnitCalculatedModel>();
-        public UnitViewModel(IUnitService service, ICalculatedUnitService calculatedUnitService)
+        private CustomBasicList<UpdateUnitStatModel> _fullAttackList = new CustomBasicList<UpdateUnitStatModel>();
+        private CustomBasicList<UpdateUnitStatModel> _fullDefenseList = new CustomBasicList<UpdateUnitStatModel>();
+        public UnitViewModel(IUnitService service, ICalculateUnitStatService calculatedUnitService)
         {
             _unitService = service;
             _calculatedUnitService = calculatedUnitService;
@@ -34,9 +34,9 @@ namespace Phase5DataLibrary.ViewModels
         public string AttackBaseString { get; set; } = "";
         public string DefenseCivilizationRequested { get; set; } = "";
         public string DefenseBaseString { get; set; } = "";
-        public CustomBasicList<UnitCalculatedModel> UnitAttackList { get; private set; } = new();
+        public CustomBasicList<UpdateUnitStatModel> UnitAttackList { get; private set; } = new();
         public CustomBasicList<string> AttackUpgradeList { get; private set; } = new();
-        public CustomBasicList<UnitCalculatedModel> UnitDefenseList { get; private set; } = new();
+        public CustomBasicList<UpdateUnitStatModel> UnitDefenseList { get; private set; } = new();
         public CustomBasicList<string> DefenseUpgradeList { get; private set; } = new();
         public async Task ChoseAttackUnitAsync()
         {
