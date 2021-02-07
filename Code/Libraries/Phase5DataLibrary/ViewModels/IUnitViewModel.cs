@@ -3,7 +3,7 @@ using Phase5DataLibrary.Models;
 using System.Threading.Tasks;
 namespace Phase5DataLibrary.ViewModels
 {
-    public interface IUnitBaseViewModel
+    public interface IUnitViewModel
     {
         CustomBasicList<string> AttackUnitStringList { get; } //this would show up first now.
         CustomBasicList<string> DefenseUnitStringList { get; }

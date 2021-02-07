@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Phase5DataLibrary.Services;
 namespace Phase5DataLibrary.ViewModels
 {
-    public class UnitViewModel : IUnitBaseViewModel
+    public class UnitViewModel : IUnitViewModel
     {
         private readonly IUnitService _unitService;
         private readonly ICalculateUnitStatService _calculatedUnitService;
