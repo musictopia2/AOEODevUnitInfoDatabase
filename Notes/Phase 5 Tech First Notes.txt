@@ -1,0 +1,76 @@
+1.  Uses a brand new file which are the upgrades.
+
+some things are not needed
+
+If Attack And Defense has no X then means do not include.
+
+2.  fields to use
+
+"Civ": "All",
+    "Name": "BodkinArrows",
+    "FromWhere": "Armory",
+    "Attack": "X",
+    "Defense": "",
+"DamageMeleeinf": "",
+    "Damagecavalry": "",
+    "Damageranged": "0.2",
+    "Damagesiegemeleeattack": "",
+    "Damagesiegerangedattack": "",
+    "Infantry": "",
+    "Ranged": "",
+    "Cavalry": "",
+    "Building": "",
+    "Ship": "",
+    "Siege": "",
+    "Priest": "",
+    "Villager": "",
+    "Sarissophoroi": "",
+"Storehouse": "",
+    "Hitpoints": "",
+    "Infantry2": "",
+    "Cavalry2": "",
+    "Ranged2": "",
+    "Siege5": "",
+    "Bdp": "",
+    "Attackspeed": ""
+
+3.  good news is for part 1, its only use to calculate dps.
+
+this means for this phase, the dps field is now different.
+
+because we will have a base dps.
+but it can be adjusted depending on various techs.
+
+4.  for this phase, a person can choose any tech they want.
+
+
+i could require a new control for choosing several items from a list.
+
+i propose for this, will be a list of object.
+
+however, will use renderfragment for the stuff before the checkbox.
+if you click on either the checkbox or the render fragment itself, will check/uncheck it.
+
+the unselect all or select all may be something else (will use bindings).
+
+
+
+my impressions:
+
+1.  the parts that would change is the dps has to have 2 different fields.
+2.  the other field requires a list of techs (could use something else to reference it) (well see).
+3.  could decide to do extensions for the model.
+
+this way the model continues to do what it does best.
+but then extensions are used for extras.
+
+maybe required.
+since dps has to be calculated (techs can influence it now).
+
+4.  a brand new file this time (the other phases did not have that).
+
+5.  lots of changes are needed to the results.
+good thing that phase 4 was done.
+so whatever i do here will not affect phase 4.
+phase 4 was a foundation.
+if phase 4 was not done, i would not had the foundation.
