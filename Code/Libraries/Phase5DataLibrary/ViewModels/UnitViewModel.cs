@@ -44,7 +44,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
-            CustomBasicList<UnitBaseModel> fullList = await _unitService.GetAttackUnitsAsync(AttackUnitRequested);
+            CustomBasicList<UnitModel> fullList = await _unitService.GetAttackUnitsAsync(AttackUnitRequested);
             _fullAttackList = _calculatedUnitService.GetCalculatedAttackUnits(fullList);
             UnitAttackList = _fullAttackList.ToCustomBasicList();
             AttackCivilizations = UnitAttackList.GroupBy(xxx => xxx.BasicUnit.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
@@ -67,7 +67,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
-            CustomBasicList<UnitBaseModel> fullList = await _unitService.GetDefenseUnitsAsync(DefenseUnitRequested);
+            CustomBasicList<UnitModel> fullList = await _unitService.GetDefenseUnitsAsync(DefenseUnitRequested);
             _fullDefenseList = _calculatedUnitService.GetCalculatedDefenseUnits(fullList);
             UnitDefenseList = _fullDefenseList.ToCustomBasicList();
             DefenseCivilizations = UnitDefenseList.GroupBy(xxx => xxx.BasicUnit.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();

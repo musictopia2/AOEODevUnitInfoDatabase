@@ -7,7 +7,7 @@ namespace Phase5DataLibrary.Models
     /// not quite ready to do records.  there are lots of fields anyways.
     /// can eventually get from online sources.
     /// </summary>
-    public class UnitBaseModel : IBasicUnit
+    public class UnitModel : IBasicUnit
     {
         public bool IsAttacker { get; set; } //this means it can be used for attacking.
         public bool Champion { get; set; }

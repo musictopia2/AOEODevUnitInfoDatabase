@@ -10,7 +10,7 @@ namespace Phase5DataLibrary.Services
 {
     public class UnitService : IUnitService
     {
-        CustomBasicList<UnitBaseModel> _allUnits = new CustomBasicList<UnitBaseModel>();
+        CustomBasicList<UnitModel> _allUnits = new CustomBasicList<UnitModel>();
         private readonly string _fileName = "Phase4.json";
         private readonly Assembly _a;
         public UnitService()
@@ -22,16 +22,16 @@ namespace Phase5DataLibrary.Services
             if (_allUnits.Count > 0)
                 return; //because we already have now.
             string text = await _a.ResourcesAllTextFromFileAsync(_fileName);
-            _allUnits = await js.DeserializeObjectAsync<CustomBasicList<UnitBaseModel>>(text);
+            _allUnits = await js.DeserializeObjectAsync<CustomBasicList<UnitModel>>(text);
             _allUnits = _allUnits.OrderBy(xxx => xxx.UnitName).ToCustomBasicList(); //this will sort.  i think its best to let this one sort.
         }
-        public async Task<CustomBasicList<UnitBaseModel>> GetAllAttackUnitsAsync()
+        public async Task<CustomBasicList<UnitModel>> GetAllAttackUnitsAsync()
         {
             await GetAllUnitsAsync();
-            CustomBasicList<UnitBaseModel> output = _allUnits.Where(xxx => xxx.IsAttacker).ToCustomBasicList();
+            CustomBasicList<UnitModel> output = _allUnits.Where(xxx => xxx.IsAttacker).ToCustomBasicList();
             return output;
         }
-        public async Task<CustomBasicList<UnitBaseModel>> GetAllDefenseUnitsAsync()
+        public async Task<CustomBasicList<UnitModel>> GetAllDefenseUnitsAsync()
         {
             await GetAllUnitsAsync();
             return _allUnits.ToCustomBasicList(); //i think this one should be all units after all.
@@ -42,10 +42,10 @@ namespace Phase5DataLibrary.Services
             CustomBasicList<string> output = _allUnits.Where(xxx => xxx.IsAttacker).GroupBy(xxx => xxx.UnitName).Select(xxx => xxx.Key).ToCustomBasicList(); //i think.
             return output;
         }
-        public async Task<CustomBasicList<UnitBaseModel>> GetAttackUnitsAsync(string unitRequested)
+        public async Task<CustomBasicList<UnitModel>> GetAttackUnitsAsync(string unitRequested)
         {
             await GetAllUnitsAsync();
-            CustomBasicList<UnitBaseModel> output = _allUnits.Where(xxx => xxx.UnitName == unitRequested && xxx.IsAttacker).ToCustomBasicList();
+            CustomBasicList<UnitModel> output = _allUnits.Where(xxx => xxx.UnitName == unitRequested && xxx.IsAttacker).ToCustomBasicList();
             return output;
         }
         public async Task<CustomBasicList<string>> GetDefenseUnitsAsync()
@@ -54,10 +54,10 @@ namespace Phase5DataLibrary.Services
             CustomBasicList<string> output = _allUnits.GroupBy(xxx => xxx.UnitName).Select(xxx => xxx.Key).ToCustomBasicList();
             return output;
         }
-        public async Task<CustomBasicList<UnitBaseModel>> GetDefenseUnitsAsync(string unitRequested)
+        public async Task<CustomBasicList<UnitModel>> GetDefenseUnitsAsync(string unitRequested)
         {
             await GetAllUnitsAsync();
-            CustomBasicList<UnitBaseModel> output = _allUnits.Where(xxx => xxx.UnitName == unitRequested).ToCustomBasicList();
+            CustomBasicList<UnitModel> output = _allUnits.Where(xxx => xxx.UnitName == unitRequested).ToCustomBasicList();
             return output;
         }
     }

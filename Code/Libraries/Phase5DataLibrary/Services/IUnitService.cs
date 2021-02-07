@@ -8,9 +8,9 @@ namespace Phase5DataLibrary.Services
     {
         Task<CustomBasicList<string>> GetAttackUnitsAsync(); //only a list of strings this time.
         Task<CustomBasicList<string>> GetDefenseUnitsAsync(); //only a list of strings this time.
-        Task<CustomBasicList<UnitBaseModel>> GetAttackUnitsAsync(string unitRequested);
-        Task<CustomBasicList<UnitBaseModel>> GetDefenseUnitsAsync(string unitRequested);
-        Task<CustomBasicList<UnitBaseModel>> GetAllAttackUnitsAsync(); //this allows for a report to make sure everything is fine.
-        Task<CustomBasicList<UnitBaseModel>> GetAllDefenseUnitsAsync(); //this allows for a report to make sure everything is fine.
+        Task<CustomBasicList<UnitModel>> GetAttackUnitsAsync(string unitRequested);
+        Task<CustomBasicList<UnitModel>> GetDefenseUnitsAsync(string unitRequested);
+        Task<CustomBasicList<UnitModel>> GetAllAttackUnitsAsync(); //this allows for a report to make sure everything is fine.
+        Task<CustomBasicList<UnitModel>> GetAllDefenseUnitsAsync(); //this allows for a report to make sure everything is fine.
     }
 }
