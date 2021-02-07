@@ -7,9 +7,10 @@ namespace Phase5DataLibrary.ViewModels
     {
 
         //try to make this not require the unit view model.
+        //this can use the container.
 
-        CustomBasicList<TechnologyModel> AttackSelectedTechList { get; }
-        CustomBasicList<TechnologyModel> DefenseSelectedTechList { get; }
+        //for now, let the container handle it.
+
         CustomBasicList<TechnologyModel> AttackFullTechList { get; }
         CustomBasicList<TechnologyModel> DefenseFullTechList { get; }
         void SelectAllTech();

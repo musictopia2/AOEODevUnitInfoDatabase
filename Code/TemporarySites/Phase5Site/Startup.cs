@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Phase5DataLibrary.Containers;
 using Phase5DataLibrary.Services;
 using Phase5DataLibrary.ViewModels;
 using System;
@@ -37,6 +38,8 @@ namespace Phase5Site
             //since this has to communicate with the stats now.
             //services.AddScoped<IUnitViewModel, UnitViewModel>();
             services.AddScoped<IAttackResultsViewModel, AttackResultsViewModel>();
+
+            services.AddScoped<TechListContainer, TechListContainer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
