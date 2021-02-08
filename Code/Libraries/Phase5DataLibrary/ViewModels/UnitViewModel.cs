@@ -11,13 +11,18 @@ namespace Phase5DataLibrary.ViewModels
     {
         private readonly IUnitService _unitService;
         private readonly ICalculateUnitStatService _calculatedUnitService;
+        private readonly ITechViewModel _tech;
         private readonly CustomBasicList<string> _upgrades = new CustomBasicList<string>();
         private CustomBasicList<UpdateUnitStatModel> _fullAttackList = new CustomBasicList<UpdateUnitStatModel>();
         private CustomBasicList<UpdateUnitStatModel> _fullDefenseList = new CustomBasicList<UpdateUnitStatModel>();
-        public UnitViewModel(IUnitService service, ICalculateUnitStatService calculatedUnitService)
+        public UnitViewModel(IUnitService service, 
+            ICalculateUnitStatService calculatedUnitService,
+            ITechViewModel tech
+            )
         {
             _unitService = service;
             _calculatedUnitService = calculatedUnitService;
+            _tech = tech;
             _upgrades = new CustomBasicList<string>()
             {
                 "Base",
@@ -62,6 +67,7 @@ namespace Phase5DataLibrary.ViewModels
             }
             if (AttackCivilizations.Count == 1)
             {
+                _tech.FilterAttackCivilization(AttackCivilizations.Single());
                 AttackCivilizations = new CustomBasicList<string>(); //seems silly to choose civilzation if there is only one civilization.
             }
         }
@@ -89,6 +95,7 @@ namespace Phase5DataLibrary.ViewModels
             }
             if (DefenseCivilizations.Count == 1)
             {
+                _tech.FilterDefenseCivilization(DefenseCivilizations.Single());
                 DefenseCivilizations = new CustomBasicList<string>(); //seems silly to choose civilzation if there is only one civilization.
             }
         }
@@ -145,6 +152,7 @@ namespace Phase5DataLibrary.ViewModels
         {
             UnitAttackList = _fullAttackList.Where(xxx => xxx.BasicUnit.Civilization == AttackCivilizationRequested).ToCustomBasicList();
             _calculatedUnitService.RecalculateAttackUnits(UnitAttackList); //i think it should recalculate just in case.
+            _tech.FilterAttackCivilization(AttackCivilizationRequested); //this needed the tech view model so it can filter the tech list based on civilization chosen.
         }
         public void FilterDefenseBaseChampion()
         {
@@ -182,6 +190,7 @@ namespace Phase5DataLibrary.ViewModels
         {
             UnitDefenseList = _fullDefenseList.Where(xxx => xxx.BasicUnit.Civilization == DefenseCivilizationRequested).ToCustomBasicList();
             _calculatedUnitService.RecalculateDefenseUnits(UnitDefenseList); //i think
+            _tech.FilterDefenseCivilization(DefenseCivilizationRequested);
         }
         public async Task InitAsync()
         {

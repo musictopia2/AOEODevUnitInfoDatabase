@@ -1,6 +1,7 @@
 ﻿using CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 using CommonBasicStandardLibraries.CollectionClasses;
 using Phase5DataLibrary.Containers;
+using Phase5DataLibrary.Helpers;
 using Phase5DataLibrary.Models;
 using Phase5DataLibrary.Services;
 using System;
@@ -27,24 +28,27 @@ namespace Phase5DataLibrary.ViewModels
         public CustomBasicList<TechnologyModel> AttackFullTechList { get; private set; }
         public CustomBasicList<TechnologyModel> DefenseFullTechList { get; private set; }
         public Action Refresh { get; set; }
-
         public void UnselectAllAttackTechs()
         {
             _container.AttackSelectedTechList.Clear();
             Refresh?.Invoke();
         }
-
         public void UnselectAllDefenseTechs()
         {
             _container.DefenseSelectedTechList.Clear();
             Refresh?.Invoke();
         }
-
         public void FilterAttackCivilization(string civilization)
         {
-            
+            AttackFullTechList.FilterTechCivs(civilization);
         }
+        public void FilterDefenseCivilization(string civilization)
+        {
+            DefenseFullTechList.FilterTechCivs(civilization);
+        }
+        //since this does not use anything from here, should be extension.
 
+        
 
         //maybe no need for now for filtering attacking unit (well see).
 
@@ -59,10 +63,7 @@ namespace Phase5DataLibrary.ViewModels
         //    throw new NotImplementedException();
         //}
 
-        public void FilterDefenseCivilization(string civilization)
-        {
-            
-        }
+
 
         public async Task InitAsync()
         {
