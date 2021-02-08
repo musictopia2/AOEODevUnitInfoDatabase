@@ -13,14 +13,20 @@ namespace Phase5DataLibrary.ViewModels
 
         CustomBasicList<TechnologyModel> AttackFullTechList { get; }
         CustomBasicList<TechnologyModel> DefenseFullTechList { get; }
-        void SelectAllTech();
-        void ClearTechs();
+        void SelectAllAttackTechs();
+        void UnselectAllAttackTechs();
+
+        void SelectAllDefenseTechs();
+        void UnselectAllDefenseTechs();
+
+        void ClearTechs(); //this means to reset the lists.
+
         Task InitAsync(); //this can be to get the lists.
 
         //i will have to see if anything else is needed.
-        void FilterAttackingUnit(string attackingUnit);
+        //void FilterAttackingUnit(string attackingUnit);
         void FilterAttackCivilization(string civilization);
-        Task FilterDefendingUnit(string defendingUnit);
+        //Task FilterDefendingUnit(string defendingUnit);
         void FilterDefenseCivilization(string civilization);
     }
 }

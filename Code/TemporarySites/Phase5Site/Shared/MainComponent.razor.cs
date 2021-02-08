@@ -2,6 +2,7 @@ using BasicBlazorLibrary.Components.ComboTextboxes;
 using BasicBlazorLibrary.Helpers;
 using CommonBasicStandardLibraries.CollectionClasses;
 using Microsoft.AspNetCore.Components;
+using Phase5DataLibrary.Containers;
 using Phase5DataLibrary.Models;
 using Phase5DataLibrary.ViewModels;
 using System.Threading.Tasks;
@@ -15,6 +16,10 @@ namespace Phase5Site.Shared
         //private ComboBoxStringList _firstDefenseCombo;
         private ComboBoxStringList _secondDefenseCombo;
         private ComboBoxStringList _thirdDefenseCombo;
+        private bool _showTechs;
+
+        [Inject]
+        private TechListContainer TechContainer { get; set; }
 
 
         [Inject]

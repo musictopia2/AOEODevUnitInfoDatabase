@@ -40,6 +40,7 @@ namespace Phase5Site
             services.AddScoped<IAttackResultsViewModel, AttackResultsViewModel>();
             services.AddScoped<ICalculateUnitStatService, CalculateUnitStatService>();
             services.AddScoped<TechListContainer, TechListContainer>();
+            services.AddScoped<ITechViewModel, TechViewModel>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
