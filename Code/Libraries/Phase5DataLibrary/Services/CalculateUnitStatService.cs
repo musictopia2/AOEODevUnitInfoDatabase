@@ -30,6 +30,7 @@ namespace Phase5DataLibrary.Services
                 UpdateUnitStatModel unit = new();
                 unit.BasicUnit = old;
                 unit.OriginalUnit = old;
+                output.Add(unit);
             });
             RecalculateAttackUnits(output);
             return output;
@@ -42,6 +43,7 @@ namespace Phase5DataLibrary.Services
                 UpdateUnitStatModel unit = new();
                 unit.BasicUnit = old;
                 unit.OriginalUnit = old;
+                output.Add(unit);
             });
             RecalculateDefenseUnits(output);
             return output;

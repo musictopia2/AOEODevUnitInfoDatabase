@@ -36,7 +36,7 @@ namespace Phase5Site
             services.AddSingleton<IDamageExceptionService, DamageExceptionService>();
             //can't do the unitviewmodel until something handles the stats.
             //since this has to communicate with the stats now.
-            //services.AddScoped<IUnitViewModel, UnitViewModel>();
+            services.AddScoped<IUnitViewModel, UnitViewModel>();
             services.AddScoped<IAttackResultsViewModel, AttackResultsViewModel>();
             services.AddScoped<ICalculateUnitStatService, CalculateUnitStatService>();
             services.AddScoped<TechListContainer, TechListContainer>();

@@ -43,9 +43,6 @@ namespace Phase5Site.Shared
                 _focusedOnce = true;
             }
         }
-
-        
-
         private async Task ChooseAttackUnitAsync()
         {
             await DataContext.ChoseAttackUnitAsync();

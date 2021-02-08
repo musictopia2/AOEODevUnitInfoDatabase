@@ -46,6 +46,10 @@ namespace Phase5DataLibrary.ViewModels
             }
             CustomBasicList<UnitModel> fullList = await _unitService.GetAttackUnitsAsync(AttackUnitRequested);
             _fullAttackList = _calculatedUnitService.GetCalculatedAttackUnits(fullList);
+            if (_fullAttackList.Count == 0)
+            {
+                throw new BasicBlankException("Cannot have 0 units for attacking");
+            }
             UnitAttackList = _fullAttackList.ToCustomBasicList();
             AttackCivilizations = UnitAttackList.GroupBy(xxx => xxx.BasicUnit.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
             if (UnitAttackList.Any(xxx => xxx.BasicUnit.Champion))
@@ -69,6 +73,10 @@ namespace Phase5DataLibrary.ViewModels
             }
             CustomBasicList<UnitModel> fullList = await _unitService.GetDefenseUnitsAsync(DefenseUnitRequested);
             _fullDefenseList = _calculatedUnitService.GetCalculatedDefenseUnits(fullList);
+            if (_fullDefenseList.Count == 0)
+            {
+                throw new BasicBlankException("Cannot have 0 units for defense");
+            }
             UnitDefenseList = _fullDefenseList.ToCustomBasicList();
             DefenseCivilizations = UnitDefenseList.GroupBy(xxx => xxx.BasicUnit.Civilization).Select(xxx => xxx.Key).OrderBy(xxx => xxx).ToCustomBasicList();
             if (UnitDefenseList.Any(xxx => xxx.BasicUnit.Champion))
