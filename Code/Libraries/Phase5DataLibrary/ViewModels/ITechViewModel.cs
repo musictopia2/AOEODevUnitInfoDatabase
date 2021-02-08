@@ -1,5 +1,6 @@
 ﻿using CommonBasicStandardLibraries.CollectionClasses;
 using Phase5DataLibrary.Models;
+using System;
 using System.Threading.Tasks;
 namespace Phase5DataLibrary.ViewModels
 {
@@ -28,5 +29,6 @@ namespace Phase5DataLibrary.ViewModels
         void FilterAttackCivilization(string civilization);
         //Task FilterDefendingUnit(string defendingUnit);
         void FilterDefenseCivilization(string civilization);
+        Action Refresh { get; set; }
     }
 }

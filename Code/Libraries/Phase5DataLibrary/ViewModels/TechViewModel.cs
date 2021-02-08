@@ -3,6 +3,7 @@ using CommonBasicStandardLibraries.CollectionClasses;
 using Phase5DataLibrary.Containers;
 using Phase5DataLibrary.Models;
 using Phase5DataLibrary.Services;
+using System;
 using System.Threading.Tasks;
 namespace Phase5DataLibrary.ViewModels
 {
@@ -25,15 +26,18 @@ namespace Phase5DataLibrary.ViewModels
 
         public CustomBasicList<TechnologyModel> AttackFullTechList { get; private set; }
         public CustomBasicList<TechnologyModel> DefenseFullTechList { get; private set; }
+        public Action Refresh { get; set; }
 
         public void UnselectAllAttackTechs()
         {
             _container.AttackSelectedTechList.Clear();
+            Refresh?.Invoke();
         }
 
         public void UnselectAllDefenseTechs()
         {
             _container.DefenseSelectedTechList.Clear();
+            Refresh?.Invoke();
         }
 
         public void FilterAttackCivilization(string civilization)
@@ -74,11 +78,13 @@ namespace Phase5DataLibrary.ViewModels
         {
             //this means that the attack selected total will be whatever is known.
             _container.AttackSelectedTechList = AttackFullTechList.ToCustomBasicList(); //make a copy.
+            Refresh?.Invoke();
         }
 
         public void SelectAllDefenseTechs()
         {
             _container.DefenseSelectedTechList = DefenseFullTechList.ToCustomBasicList();
+            Refresh?.Invoke();
         }
 
         public void ClearTechs()

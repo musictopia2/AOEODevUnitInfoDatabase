@@ -1,0 +1,4 @@
+﻿@inherits BaseTechListComponent
+<MultiselectCheckboxComponent Data="DataContext.DefenseFullTechList"
+                              @bind-Values="Container.DefenseSelectedTechList"
+                              RetrieveValue="(item) => item.Name" />

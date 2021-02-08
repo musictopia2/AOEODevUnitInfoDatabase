@@ -1,0 +1,23 @@
+﻿@inherits BasePortalComponent
+<StackLayout Orientation="EnumOrientation.Horizontal">
+    <StackItem>
+        <button @onclick="OnSave" class="btn btn-primary">
+            Save Selected Techs
+        </button>
+    </StackItem>
+    <StackItem>
+        <button @onclick="OnCancel" class="btn btn-primary">
+            Cancel
+        </button>
+    </StackItem>
+    <StackItem>
+        <button class="btn btn-primary" @onclick="() => DataContext.SelectAllDefenseTechs()">
+            Select All Techs
+        </button>
+    </StackItem>
+    <StackItem>
+        <button class="btn btn-primary" @onclick="() => DataContext.UnselectAllDefenseTechs()">
+            Unselect All Techs
+        </button>
+    </StackItem>
+</StackLayout> 

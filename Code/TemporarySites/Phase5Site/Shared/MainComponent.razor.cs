@@ -1,5 +1,5 @@
 using BasicBlazorLibrary.Components.ComboTextboxes;
-using BasicBlazorLibrary.Helpers;
+using CommonBasicStandardLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 using CommonBasicStandardLibraries.CollectionClasses;
 using Microsoft.AspNetCore.Components;
 using Phase5DataLibrary.Containers;
@@ -16,12 +16,16 @@ namespace Phase5Site.Shared
         //private ComboBoxStringList _firstDefenseCombo;
         private ComboBoxStringList _secondDefenseCombo;
         private ComboBoxStringList _thirdDefenseCombo;
-        private bool _showTechs;
+        private bool _showAttackTechs;
+        private bool _showDefenseTechs;
+        private CustomBasicList<TechnologyModel> _oldAttackList = new();
+        private CustomBasicList<TechnologyModel> _oldDefenseList = new();
 
         [Inject]
         private TechListContainer TechContainer { get; set; }
 
-
+        [Inject]
+        private ITechViewModel TechVM { get; set; }
         [Inject]
         private IUnitViewModel DataContext { get; set; }
         [Inject]
@@ -39,6 +43,7 @@ namespace Phase5Site.Shared
             _thirdDefenseCombo = null;
             _style.Width = "150px";
             await DataContext.InitAsync();
+            await TechVM.InitAsync();
         }
         protected override async Task OnAfterRenderAsync(bool firstRender) //this one is still true
         {
@@ -101,6 +106,36 @@ namespace Phase5Site.Shared
         private void RunReportAsync()
         {
             _resultsList = ResultsContext.GetAttackResults(DataContext.UnitAttackList, DataContext.UnitDefenseList);
+        }
+        private void SaveAttackTechs()
+        {
+            _showAttackTechs = false;
+            //will not recalculate the results yet.  because rethinking is required first.
+        }
+        private void SaveDefenseTechs()
+        {
+            _showDefenseTechs = false;
+            //will not recalculate the results yet.  because rethinking is required first.
+        }
+        private void OpenAttackTechs()
+        {
+            _oldAttackList = TechContainer.AttackSelectedTechList.ToCustomBasicList();
+            _showAttackTechs = true;
+        }
+        private void OpenDefenseTechs()
+        {
+            _oldDefenseList = TechContainer.DefenseSelectedTechList.ToCustomBasicList();
+            _showDefenseTechs = true;
+        }
+        private void CancelAttackTechs()
+        {
+            TechContainer.AttackSelectedTechList = _oldAttackList.ToCustomBasicList();
+            _showAttackTechs = false;
+        }
+        private void CancelDefenseTechs()
+        {
+            TechContainer.DefenseSelectedTechList = _oldDefenseList.ToCustomBasicList();
+            _showDefenseTechs = false;
         }
     }
 }

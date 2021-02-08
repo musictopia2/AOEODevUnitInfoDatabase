@@ -12,7 +12,7 @@
                        ColumnGap="2px"
                        Width="100%"
                        Height="100%"
-                       Columns="auto auto auto 1fr">
+                       Columns="auto auto auto 3fr 1fr">
             <GridItem>
                 <ComboBoxStringList ItemList="DataContext.AttackUnitStringList"
                                     ComboEnterPressed="ChooseAttackUnitAsync"
@@ -37,11 +37,26 @@
                                     Style="_style"
                                     Placeholder="Attack Upgrade" />
             </GridItem>
+            <GridItem Column="4">
+                <button @onclick="OpenAttackTechs" class="btn btn-primary">
+                    Show Attack Techs
+                </button>
+            </GridItem>
             <GridItem Row="2" ColumnSpan="4" Style="overflow: auto">
 
                 @if (DataContext.UnitAttackList.Count > 0)
                 {
                     <AttackUnitListComponent Units="DataContext.UnitAttackList" />
+                }
+            </GridItem>
+            <GridItem Row="2" Column="5" Style="overflow: auto">
+                @if (TechContainer.AttackSelectedTechList.Count > 0)
+                {
+                    <b>Attack Techs Selected:</b>
+                    @foreach (var tech in TechContainer.AttackSelectedTechList)
+                    {
+                        <div>@tech.Name</div>
+                    }
                 }
             </GridItem>
             <GridItem Row="3">
@@ -67,10 +82,25 @@
                                     Style="_style"
                                     Placeholder="Defense Upgrade" />
             </GridItem>
+            <GridItem Row="3" Column="4">
+                <button @onclick="OpenDefenseTechs" class="btn btn-primary">
+                    Show Defense Techs
+                </button>
+            </GridItem>
             <GridItem Row="4" ColumnSpan="4" Style="overflow: auto">
                 @if (DataContext.UnitDefenseList.Count > 0)
                 {
                     <DefenseUnitListComponent Units="DataContext.UnitDefenseList" />
+                }
+            </GridItem>
+            <GridItem Row="4" Column="5" Style="overflow: auto">
+                @if (TechContainer.DefenseSelectedTechList.Count > 0)
+                {
+                    <b>Defense Techs Selected:</b>
+                    @foreach (var tech in TechContainer.DefenseSelectedTechList)
+                    {
+                        <div>@tech.Name</div>
+                    }
                 }
             </GridItem>
         </GridContainer>
@@ -105,6 +135,45 @@
             }
 
         }
+
+
+        @if (_showAttackTechs || _showDefenseTechs)
+        {
+            <PopupCenteredFull Visible="true"
+                               ShowCloseButton="false"
+                               DisableBackgroundClick="true"
+                               Scrollable="true"
+                               ShowHeader="false"
+                               Width="60vw"
+                               Height="80vh">
+                <Content>
+                    @if (_showAttackTechs)
+                    {
+                        <AttackTechListComponent />
+                    }
+                    else
+                    {
+                        <DefenseTechListComponent />
+                    }
+                </Content>
+                <FooterTemplate>
+                    @if (_showAttackTechs)
+                    {
+                        <AttackTechPortal
+                                          OnSave="SaveAttackTechs"
+                                          OnCancel="CancelAttackTechs" />
+                    }
+                    else
+                    {
+                        <DefenseTechPortal
+                                           OnSave="SaveDefenseTechs"
+                                           OnCancel="CancelDefenseTechs"
+                                           />
+                    }
+                </FooterTemplate>
+            </PopupCenteredFull>
+        }
+
 
         @* here will have the run button.   only can show up if you have attack list and defense list *@
     </BottomContent>
