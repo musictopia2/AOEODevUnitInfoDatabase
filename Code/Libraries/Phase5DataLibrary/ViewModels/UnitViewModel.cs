@@ -115,6 +115,10 @@ namespace Phase5DataLibrary.ViewModels
             DefenseBaseString = "";
             AttackUpgradeList.Clear();
             DefenseUpgradeList.Clear();
+            //this is needed to also clear the techs to unselect all attack and defense techs.
+            _tech.ClearTechs();
+            _tech.UnselectAllAttackTechs();
+            _tech.UnselectAllDefenseTechs();
         }
         public void FilterAttackBaseChampion()
         {
