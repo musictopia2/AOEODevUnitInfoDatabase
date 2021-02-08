@@ -1,0 +1,111 @@
+﻿@using BasicBlazorLibrary.Components.CssGrids
+@using BasicBlazorLibrary.Components.Layouts.Simple
+@using BasicBlazorLibrary.Components.Modals
+@if (DataContext.AttackUnitStringList.Count == 0)
+{
+    <div>Loading.....</div>
+    return;
+}
+<LeftOverLayoutComponent>
+    <MainContent>
+        <GridContainer RowGap="2px" Rows="auto 1fr auto 1fr"
+                       ColumnGap="2px"
+                       Width="100%"
+                       Height="100%"
+                       Columns="auto auto auto 1fr">
+            <GridItem>
+                <ComboBoxStringList ItemList="DataContext.AttackUnitStringList"
+                                    ComboEnterPressed="ChooseAttackUnitAsync"
+                                    @bind-Value="DataContext.AttackUnitRequested"
+                                    Style="_style"
+                                    @ref="_firstAttackCombo"
+                                    Placeholder="Attack Units" />
+            </GridItem>
+            <GridItem Column="2">
+                <ComboBoxStringList ItemList="DataContext.AttackCivilizations"
+                                    ComboEnterPressed="() => FilterAttackCivAsync()"
+                                    @bind-Value="DataContext.AttackCivilizationRequested"
+                                    @ref="_secondAttackCombo"
+                                    Style="_style"
+                                    Placeholder="Attack Civilization" />
+            </GridItem>
+            <GridItem Column="3">
+                <ComboBoxStringList ItemList="DataContext.AttackUpgradeList"
+                                    ComboEnterPressed="() => DataContext.FilterAttackBaseChampion()"
+                                    @bind-Value="DataContext.AttackBaseString"
+                                    @ref="_thirdAttackCombo"
+                                    Style="_style"
+                                    Placeholder="Attack Upgrade" />
+            </GridItem>
+            <GridItem Row="2" ColumnSpan="4" Style="overflow: auto">
+
+                @if (DataContext.UnitAttackList.Count > 0)
+                {
+                    <AttackUnitListComponent Units="DataContext.UnitAttackList" />
+                }
+            </GridItem>
+            <GridItem Row="3">
+                <ComboBoxStringList ItemList="DataContext.DefenseUnitStringList"
+                                    ComboEnterPressed="ChooseDefenseUnitAsync"
+                                    @bind-Value="DataContext.DefenseUnitRequested"
+                                    Style="_style"
+                                    Placeholder="Defense Units" />
+            </GridItem>
+            <GridItem Row="3" Column="2">
+                <ComboBoxStringList ItemList="DataContext.DefenseCivilizations"
+                                    ComboEnterPressed="() => FilterDefenseCivAsync()"
+                                    @bind-Value="DataContext.DefenseCivilizationRequested"
+                                    @ref="_secondDefenseCombo"
+                                    Style="_style"
+                                    Placeholder="Defense Civilization" />
+            </GridItem>
+            <GridItem Row="3" Column="3">
+                <ComboBoxStringList ItemList="DataContext.DefenseUpgradeList"
+                                    ComboEnterPressed="() => DataContext.FilterDefenseBaseChampion()"
+                                    @bind-Value="DataContext.DefenseBaseString"
+                                    @ref="_thirdDefenseCombo"
+                                    Style="_style"
+                                    Placeholder="Defense Upgrade" />
+            </GridItem>
+            <GridItem Row="4" ColumnSpan="4" Style="overflow: auto">
+                @if (DataContext.UnitDefenseList.Count > 0)
+                {
+                    <DefenseUnitListComponent Units="DataContext.UnitDefenseList" />
+                }
+            </GridItem>
+        </GridContainer>
+    </MainContent>
+    <BottomContent>
+        <button @onclick="ClearAsync" class="btn btn-primary">
+            Clear
+        </button>
+        @* 
+        because of the techs, can't do the full reports anymore.
+            i have the code in previous phases so if needed, then can rethink.
+        *@
+        
+
+        @if (DataContext.UnitAttackList.Count > 0 && DataContext.UnitDefenseList.Count > 0)
+        {
+            <button style="margin-left: 2px;" @onclick="() => RunReportAsync()" class="btn btn-primary">
+                Run
+            </button>
+
+            @if (_resultsList.Count > 0)
+            {
+                <PopupCenteredFull Visible="true"
+                                   CloseButtonClick="() => CloseReport()"
+                                   ShowCloseButton="true"
+                                   DisableBackgroundClick="false"
+                                   Scrollable="true"
+                                   Width="60vw"
+                                   Height="80vh">
+                    <AttackResultsUnitListComponent Units="_resultsList" />
+                </PopupCenteredFull>
+            }
+
+        }
+
+        @* here will have the run button.   only can show up if you have attack list and defense list *@
+    </BottomContent>
+</LeftOverLayoutComponent>

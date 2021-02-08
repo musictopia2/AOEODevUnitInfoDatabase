@@ -1,0 +1,38 @@
+﻿@if (Units.Count == 0)
+{
+    <div>Loading.....</div>
+    return;
+}
+<table>
+    <tr>
+        <td><b>Full Unit Name</b></td>
+        <td><b>Hand DPS</b></td>
+        <td><b>Cavalry DPS</b></td>
+        <td><b>Ranged DPS</b></td>
+        <td><b>Siege Melee DPS</b></td>
+        <td><b>Siege Ranged DPS</b></td>
+        <td><b>Hand DPA</b></td>
+        <td><b>Cavalry DPA</b></td>
+        <td><b>Ranged DPA</b></td>
+        <td><b>Siege Melee DPA</b></td>
+        <td><b>Siege Ranged DPA</b></td>
+        <td><b>Charge DPA</b></td>
+    </tr>
+    @foreach (var unit in Units)
+    {
+        <tr>
+            <td>@unit.FullName</td>
+            <td>@unit.HandDPS</td>
+            <td>@unit.CavalryDPS</td>
+            <td>@unit.RangedDPS</td>
+            <td>@unit.SiegeMeleeDPS</td>
+            <td>@unit.SiegeRangedDPS</td>
+            <td>@unit.HandDPA</td>
+            <td>@unit.CavalryDPA</td>
+            <td>@unit.RangedDPA</td>
+            <td>@unit.SiegeMeleeDPA</td>
+            <td>@unit.SiegeRangedDPA</td>
+            <td>@unit.ChargeDPA</td>
+        </tr>
+    }
+</table>
