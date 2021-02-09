@@ -20,7 +20,10 @@ namespace Phase5DataLibrary.ViewModels
         void SelectAllDefenseTechs();
         void UnselectAllDefenseTechs();
 
-        void ClearTechs(); //this means to reset the lists.
+        void ClearAllTechs(); //this means to reset the lists.
+
+        void ClearAttackTechs();
+        void ClearDefenseTechs();
 
         Task InitAsync(); //this can be to get the lists.
 

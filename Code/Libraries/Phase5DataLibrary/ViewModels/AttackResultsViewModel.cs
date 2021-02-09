@@ -2,13 +2,10 @@
 using CommonBasicStandardLibraries.Exceptions;
 using Phase5DataLibrary.Helpers;
 using Phase5DataLibrary.Models;
-using Phase5DataLibrary.Services;
-using System.Threading.Tasks;
 namespace Phase5DataLibrary.ViewModels
 {
     public class AttackResultsViewModel : IAttackResultsViewModel
     {
-        
         public CustomBasicList<AttackResultsModel> GetAttackResults(CustomBasicList<UpdateUnitStatModel> attackingUnits, CustomBasicList<UpdateUnitStatModel> defendingUnits)
         {
             CustomBasicList<AttackResultsModel> output = new();

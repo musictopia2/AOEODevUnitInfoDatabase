@@ -49,6 +49,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
+            _tech.ClearAttackTechs();
             CustomBasicList<UnitModel> fullList = await _unitService.GetAttackUnitsAsync(AttackUnitRequested);
             _fullAttackList = _calculatedUnitService.GetCalculatedAttackUnits(fullList);
             if (_fullAttackList.Count == 0)
@@ -77,6 +78,7 @@ namespace Phase5DataLibrary.ViewModels
             {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
+            _tech.ClearDefenseTechs();
             CustomBasicList<UnitModel> fullList = await _unitService.GetDefenseUnitsAsync(DefenseUnitRequested);
             _fullDefenseList = _calculatedUnitService.GetCalculatedDefenseUnits(fullList);
             if (_fullDefenseList.Count == 0)
@@ -116,7 +118,7 @@ namespace Phase5DataLibrary.ViewModels
             AttackUpgradeList.Clear();
             DefenseUpgradeList.Clear();
             //this is needed to also clear the techs to unselect all attack and defense techs.
-            _tech.ClearTechs();
+            _tech.ClearAllTechs();
             _tech.UnselectAllAttackTechs();
             _tech.UnselectAllDefenseTechs();
         }
@@ -154,6 +156,7 @@ namespace Phase5DataLibrary.ViewModels
         }
         public void FilterAttackCivilization()
         {
+            _tech.ClearAttackTechs();
             UnitAttackList = _fullAttackList.Where(xxx => xxx.BasicUnit.Civilization == AttackCivilizationRequested).ToCustomBasicList();
             _calculatedUnitService.RecalculateAttackUnits(UnitAttackList); //i think it should recalculate just in case.
             _tech.FilterAttackCivilization(AttackCivilizationRequested); //this needed the tech view model so it can filter the tech list based on civilization chosen.
@@ -192,6 +195,7 @@ namespace Phase5DataLibrary.ViewModels
         }
         public void FilterDefenseCivilization()
         {
+            _tech.ClearDefenseTechs();
             UnitDefenseList = _fullDefenseList.Where(xxx => xxx.BasicUnit.Civilization == DefenseCivilizationRequested).ToCustomBasicList();
             _calculatedUnitService.RecalculateDefenseUnits(UnitDefenseList); //i think
             _tech.FilterDefenseCivilization(DefenseCivilizationRequested);

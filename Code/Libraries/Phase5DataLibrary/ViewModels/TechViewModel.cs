@@ -69,7 +69,7 @@ namespace Phase5DataLibrary.ViewModels
         {
             _fullAttackList = await _techService.GetAllAttackTechsAsync();
             _fullDefenseList = await _techService.GetAllDefenseTechsAsync();
-            ClearTechs();
+            ClearAllTechs();
         }
 
         //i propose no recalculations until you close the popup.
@@ -88,10 +88,22 @@ namespace Phase5DataLibrary.ViewModels
             Refresh?.Invoke();
         }
 
-        public void ClearTechs()
+        public void ClearAllTechs()
         {
             AttackFullTechList = _fullAttackList.ToCustomBasicList();
             DefenseFullTechList = _fullDefenseList.ToCustomBasicList();
+        }
+
+        public void ClearAttackTechs()
+        {
+            AttackFullTechList = _fullAttackList.ToCustomBasicList();
+            _container.AttackSelectedTechList.Clear(); //in this case, no need to refresh.
+        }
+
+        public void ClearDefenseTechs()
+        {
+            DefenseFullTechList = _fullDefenseList.ToCustomBasicList();
+            _container.DefenseSelectedTechList.Clear();
         }
     }
 }

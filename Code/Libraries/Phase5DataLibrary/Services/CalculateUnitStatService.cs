@@ -130,7 +130,8 @@ namespace Phase5DataLibrary.Services
             unit.CavalryDPS = unit.OriginalUnit.CavalryDPS;
             unit.DamageBonusAbstractArcher = unit.OriginalUnit.DamageBonusAbstractArcher;
             unit.DamageBonusAbstractArtillery = unit.OriginalUnit.DamageBonusAbstractArtillery;
-            unit.DamageBonusAbstractCavalry = unit.OriginalUnit.DamageBonusAbstractInfantry;
+            unit.DamageBonusAbstractInfantry = unit.OriginalUnit.DamageBonusAbstractInfantry;
+            unit.DamageBonusAbstractCavalry = unit.OriginalUnit.DamageBonusAbstractCavalry;
             unit.DamageBonusAbstractPriest = unit.OriginalUnit.DamageBonusAbstractPriest;
             unit.DamageBonusBuilding = unit.OriginalUnit.DamageBonusBuilding;
             unit.DamageBonusGr_Cav_Sarissophoroi = unit.OriginalUnit.DamageBonusGr_Cav_Sarissophoroi;
