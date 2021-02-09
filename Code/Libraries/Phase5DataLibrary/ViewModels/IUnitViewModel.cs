@@ -28,5 +28,7 @@ namespace Phase5DataLibrary.ViewModels
         void FilterDefenseCivilization();
         void FilterDefenseBaseChampion();
         void RecalculateUnits(); //if choosing techs, needs to recalculate units.
+        bool CanShowAttackTechs { get; }
+        bool CanShowDefenseTechs { get; }
     }
 }

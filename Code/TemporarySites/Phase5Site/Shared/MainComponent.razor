@@ -38,9 +38,12 @@
                                     Placeholder="Attack Upgrade" />
             </GridItem>
             <GridItem Column="4">
-                <button @onclick="OpenAttackTechs" class="btn btn-primary">
-                    Show Attack Techs
-                </button>
+                @if (DataContext.CanShowAttackTechs && DataContext.AttackUnitRequested != "")
+                {
+                    <button @onclick="OpenAttackTechs" class="btn btn-primary">
+                        Show Attack Techs
+                    </button>
+                }
             </GridItem>
             <GridItem Row="2" ColumnSpan="4" Style="overflow: auto">
 
@@ -83,9 +86,12 @@
                                     Placeholder="Defense Upgrade" />
             </GridItem>
             <GridItem Row="3" Column="4">
-                <button @onclick="OpenDefenseTechs" class="btn btn-primary">
-                    Show Defense Techs
-                </button>
+                @if (DataContext.CanShowDefenseTechs && DataContext.DefenseUnitRequested != "")
+                {
+                    <button @onclick="OpenDefenseTechs" class="btn btn-primary">
+                        Show Defense Techs
+                    </button>
+                }
             </GridItem>
             <GridItem Row="4" ColumnSpan="4" Style="overflow: auto">
                 @if (DataContext.UnitDefenseList.Count > 0)

@@ -75,19 +75,19 @@ namespace Phase5DataLibrary.Helpers
             }
             if (tech.ArmorCavalry > 0)
             {
-                unit.ArmorCavalry = unit.ArmorCavalry.MultiplyAndAdd(tech.ArmorCavalry);
+                unit.ArmorCavalry = unit.ArmorCavalry.ArmorUpgrades(tech.ArmorCavalry);
             }
             if (tech.ArmorHand > 0)
             {
-                unit.ArmorHand = unit.ArmorHand.MultiplyAndAdd(tech.ArmorHand);
+                unit.ArmorHand = unit.ArmorHand.ArmorUpgrades(tech.ArmorHand);
             }
             if (tech.ArmorRanged > 0)
             {
-                unit.ArmorRanged = unit.ArmorRanged.MultiplyAndAdd(tech.ArmorRanged);
+                unit.ArmorRanged = unit.ArmorRanged.ArmorUpgrades(tech.ArmorRanged);
             }
             if (tech.ArmorSiege > 0)
             {
-                unit.ArmorSiege = unit.ArmorSiege.MultiplyAndAdd(tech.ArmorSiege);
+                unit.ArmorSiege = unit.ArmorSiege.ArmorUpgrades(tech.ArmorSiege);
             }
             //hopefully this is it.
         }

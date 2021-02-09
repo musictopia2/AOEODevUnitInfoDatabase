@@ -43,12 +43,16 @@ namespace Phase5DataLibrary.ViewModels
         public CustomBasicList<string> AttackUpgradeList { get; private set; } = new();
         public CustomBasicList<UpdateUnitStatModel> UnitDefenseList { get; private set; } = new();
         public CustomBasicList<string> DefenseUpgradeList { get; private set; } = new();
+        public bool CanShowAttackTechs { get; private set; }
+        public bool CanShowDefenseTechs { get; private set; }
+
         public async Task ChoseAttackUnitAsync()
         {
             if (string.IsNullOrWhiteSpace(AttackUnitRequested))
             {
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
+            CanShowAttackTechs = true;
             _tech.ClearAttackTechs();
             CustomBasicList<UnitModel> fullList = await _unitService.GetAttackUnitsAsync(AttackUnitRequested);
             _fullAttackList = _calculatedUnitService.GetCalculatedAttackUnits(fullList);
@@ -79,6 +83,7 @@ namespace Phase5DataLibrary.ViewModels
                 throw new BasicBlankException("Should not be allowd to get unit information because no unit was chosen");
             }
             _tech.ClearDefenseTechs();
+            CanShowDefenseTechs = true;
             CustomBasicList<UnitModel> fullList = await _unitService.GetDefenseUnitsAsync(DefenseUnitRequested);
             _fullDefenseList = _calculatedUnitService.GetCalculatedDefenseUnits(fullList);
             if (_fullDefenseList.Count == 0)
@@ -121,6 +126,8 @@ namespace Phase5DataLibrary.ViewModels
             _tech.ClearAllTechs();
             _tech.UnselectAllAttackTechs();
             _tech.UnselectAllDefenseTechs();
+            CanShowAttackTechs = false;
+            CanShowDefenseTechs = false;
         }
         public void FilterAttackBaseChampion()
         {
