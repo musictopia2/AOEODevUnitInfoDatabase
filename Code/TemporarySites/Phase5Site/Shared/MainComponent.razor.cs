@@ -110,12 +110,12 @@ namespace Phase5Site.Shared
         private void SaveAttackTechs()
         {
             _showAttackTechs = false;
-            //will not recalculate the results yet.  because rethinking is required first.
+            DataContext.RecalculateUnits();
         }
         private void SaveDefenseTechs()
         {
             _showDefenseTechs = false;
-            //will not recalculate the results yet.  because rethinking is required first.
+            DataContext.RecalculateUnits();
         }
         private void OpenAttackTechs()
         {

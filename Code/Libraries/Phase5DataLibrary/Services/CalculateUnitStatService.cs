@@ -1,6 +1,6 @@
 ﻿using CommonBasicStandardLibraries.CollectionClasses;
-using CommonBasicStandardLibraries.Exceptions;
 using Phase5DataLibrary.Containers;
+using Phase5DataLibrary.Helpers;
 using Phase5DataLibrary.Models;
 using System;
 using System.Linq;
@@ -86,13 +86,28 @@ namespace Phase5DataLibrary.Services
             {
                 StartAttackingUnit(unit);
             });
-            if (_techContainer.AttackSelectedTechList.Count == 0)
+            AttackTechs(attackUnits); //if there are none, would not apply anything.
+            CalculateDPA(attackUnits);
+        }
+        private void AttackTechs(CustomBasicList<UpdateUnitStatModel> units)
+        {
+            units.ForEach(unit =>
             {
-                //this means go ahead and update to use original values because no techs.
-                CalculateDPA(attackUnits);
-                return;
-            }
-            throw new BasicBlankException("Needs to calculate the techs for attack units.  Rethink");
+                _techContainer.AttackSelectedTechList.ForEach(tech =>
+                {
+                    unit.ApplyAttackTech(tech);
+                });
+            });
+        }
+        private void DefenseTechs(CustomBasicList<UpdateUnitStatModel> units)
+        {
+            units.ForEach(unit =>
+            {
+                _techContainer.DefenseSelectedTechList.ForEach(tech =>
+                {
+                    unit.ApplyDefenseTech(tech);
+                });
+            });
         }
         public void RecalculateDefenseUnits(CustomBasicList<UpdateUnitStatModel> defenseUnits)
         {
@@ -100,11 +115,7 @@ namespace Phase5DataLibrary.Services
             {
                 StartDefendingUnit(unit);
             });
-            if (_techContainer.DefenseSelectedTechList.Count == 0)
-            {
-                return; //defenders don't have dpa.
-            }
-            throw new BasicBlankException("Needs to calculate the techs for defense units.  Rethink");
+            DefenseTechs(defenseUnits); //in this case, this is it.
         }
         private static void StartDefendingUnit(UpdateUnitStatModel unit)
         {
