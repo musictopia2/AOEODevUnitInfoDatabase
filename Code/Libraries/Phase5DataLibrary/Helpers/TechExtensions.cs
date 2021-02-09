@@ -13,6 +13,10 @@ namespace Phase5DataLibrary.Helpers
             {
                 unit.HandDPS = unit.HandDPS.MultiplyAndAdd(tech.HandDPS); //hopefully this simple (?)
             }
+            if (tech.CavalryDPS > 0)
+            {
+                unit.CavalryDPS = unit.CavalryDPS.MultiplyAndAdd(tech.CavalryDPS);
+            }    
             if (tech.RangedDPS > 0)
             {
                 unit.RangedDPS = unit.RangedDPS.MultiplyAndAdd(tech.RangedDPS);
