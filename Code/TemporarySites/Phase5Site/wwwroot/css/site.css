@@ -6,7 +6,16 @@
 
 html, body {
     font-family: 'AshleyCrawford', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('RekiemOne.jpg')
+    background-image: url('RekiemOne.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    caret-color: #FBDAAF;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FBDAAF;
+    opacity: 1; /* Firefox */
 }
 
 a, .btn-link {
@@ -25,6 +34,12 @@ a, .btn-link {
 .firstTable{
     border: black solid 1px;
 }
+
+.headerpopuptable {
+    background-color: black;
+    color: #FBDAAF;
+}
+
 .content {
     padding-top: 1.1rem;
 }

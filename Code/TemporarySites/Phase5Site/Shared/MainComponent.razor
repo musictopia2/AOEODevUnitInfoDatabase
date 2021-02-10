@@ -123,15 +123,20 @@
 
         @if (DataContext.UnitAttackList.Count > 0 && DataContext.UnitDefenseList.Count > 0)
         {
-            <button style="margin-left: 2px;" @onclick="() => RunReportAsync()" class="btn btn-primary">
+            <ImageButtonComponent MainSource="/Run_Button.png"
+                                  MarginLeft="2px"
+                                  HoverSource="/Run_Button_Hover.png"
+                                  OnClick="() => RunReportAsync()"
+                                  />
+            @*<button style="margin-left: 2px;" @onclick="() => RunReportAsync()" class="btn btn-primary">
                 Run
-            </button>
-
+            </button>*@
             @if (_resultsList.Count > 0)
             {
                 <PopupCenteredFull Visible="true"
                                    CloseButtonClick="() => CloseReport()"
                                    ShowCloseButton="true"
+                                   BackgroundImage="popup.png"
                                    DisableBackgroundClick="false"
                                    Scrollable="true"
                                    Width="60vw"
@@ -139,7 +144,6 @@
                     <AttackResultsUnitListComponent Units="_resultsList" />
                 </PopupCenteredFull>
             }
-
         }
 
 
@@ -150,6 +154,7 @@
                                DisableBackgroundClick="true"
                                Scrollable="true"
                                ShowHeader="false"
+                               BackgroundImage="popup.png"
                                Width="60vw"
                                Height="80vh">
                 <Content>

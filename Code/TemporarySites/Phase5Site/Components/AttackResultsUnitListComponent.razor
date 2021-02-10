@@ -5,22 +5,22 @@
 }
 <table>
     <tr>
-        <td><b>Attacking Unit</b></td>
-        <td><b>Defending Unit</b></td>
-        <td><b>Damage Type</b></td>
-        <td><b>Charge DPS</b></td>
-        <td><b>True DPA</b></td>
-        <td><b>Number Of Animations</b></td>
+        <td class="firstTable headerpopuptable"><b>Attacking Unit</b></td>
+        <td class="centeredTable headerpopuptable"><b>Defending Unit</b></td>
+        <td class="centeredTable headerpopuptable"><b>Damage Type</b></td>
+        <td class="centeredTable headerpopuptable"><b>Charge DPS</b></td>
+        <td class="centeredTable headerpopuptable"><b>True DPA</b></td>
+        <td class="centeredTable headerpopuptable"><b>Number Of Animations</b></td>
     </tr>
     @foreach (var unit in Units)
     {
         <tr>
-            <td>@unit.AttackingUnit</td>
-            <td>@unit.DefendingUnit</td>
-            <td>@unit.DamageTypeString</td>
-            <td>@unit.ChargeDamage</td>
-            <td>@Math.Round(unit.TrueDPA, 4)</td>
-            <td>@Math.Round(unit.NumberOfAnimations, 4)</td>
+            <td class="firstTable">@unit.AttackingUnit</td>
+            <td class="centeredTable">@unit.DefendingUnit</td>
+            <td class="centeredTable">@unit.DamageTypeString</td>
+            <td class="centeredTable">@unit.ChargeDamage</td>
+            <td class="centeredTable">@Math.Round(unit.TrueDPA, 4)</td>
+            <td class="centeredTable">@Math.Round(unit.NumberOfAnimations, 4)</td>
         </tr>
     }
 </table>

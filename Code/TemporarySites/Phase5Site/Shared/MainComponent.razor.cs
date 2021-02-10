@@ -6,6 +6,7 @@ using Phase5DataLibrary.Containers;
 using Phase5DataLibrary.Models;
 using Phase5DataLibrary.ViewModels;
 using System.Threading.Tasks;
+using cc = CommonBasicStandardLibraries.BasicDataSettingsAndProcesses.SColorString;
 namespace Phase5Site.Shared
 {
     public partial class MainComponent
@@ -41,7 +42,12 @@ namespace Phase5Site.Shared
             //_firstDefenseCombo = null;
             _secondDefenseCombo = null;
             _thirdDefenseCombo = null;
-            _style.Width = "150px";
+            _style.Width = "250px";
+            _style.HeaderBackgroundColor = cc.Black.ToWebColor();
+            _style.HeaderTextColor = "#FBDAAF";
+            _style.HighlightColor = _style.HeaderTextColor;
+            _style.ComboBackgroundColor = cc.Transparent.ToWebColor();
+            _style.ComboTextColor = cc.Black.ToWebColor();
             await DataContext.InitAsync();
             await TechVM.InitAsync();
         }
