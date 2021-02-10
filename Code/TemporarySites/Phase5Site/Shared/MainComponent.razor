@@ -40,9 +40,10 @@
             <GridItem Column="4">
                 @if (DataContext.CanShowAttackTechs && DataContext.AttackUnitRequested != "")
                 {
-                    <button @onclick="OpenAttackTechs" class="btn btn-primary">
-                        Show Attack Techs
-                    </button>
+                    <ImageButtonComponent MainSource="/ShowAttackTechs.png"
+                                          HoverSource="/ShowAttackTechsHover.png"
+                                          OnClick="OpenAttackTechs"
+                                          />
                 }
             </GridItem>
             <GridItem Row="2" ColumnSpan="4" Style="overflow: auto">
@@ -88,9 +89,9 @@
             <GridItem Row="3" Column="4">
                 @if (DataContext.CanShowDefenseTechs && DataContext.DefenseUnitRequested != "")
                 {
-                    <button @onclick="OpenDefenseTechs" class="btn btn-primary">
-                        Show Defense Techs
-                    </button>
+                <ImageButtonComponent MainSource="/ShowDefenseTechs.png"
+                                      HoverSource="/ShowDefenseTechsHover.png"
+                                      OnClick="OpenDefenseTechs" />
                 }
             </GridItem>
             <GridItem Row="4" ColumnSpan="4" Style="overflow: auto">
@@ -112,9 +113,12 @@
         </GridContainer>
     </MainContent>
     <BottomContent>
-        <button @onclick="ClearAsync" class="btn btn-primary">
-            Clear
-        </button>
+
+        <ImageButtonComponent MainSource="/clear.png"
+                              HoverSource="/clearHover.png"
+                              OnClick="ClearAsync" />
+
+       
         @* 
         because of the techs, can't do the full reports anymore.
             i have the code in previous phases so if needed, then can rethink.
@@ -136,7 +140,7 @@
                 <PopupCenteredFull Visible="true"
                                    CloseButtonClick="() => CloseReport()"
                                    ShowCloseButton="true"
-                                   BackgroundImage="popup.png"
+                                   BackgroundImage="BackgroundRunPopup.png"
                                    DisableBackgroundClick="false"
                                    Scrollable="true"
                                    Width="60vw"
@@ -154,8 +158,8 @@
                                DisableBackgroundClick="true"
                                Scrollable="true"
                                ShowHeader="false"
-                               BackgroundImage="popup.png"
-                               Width="60vw"
+                               BackgroundImage="BackgroundTechPopup.png"
+                               Width="75vw"
                                Height="80vh">
                 <Content>
                     @if (_showAttackTechs)

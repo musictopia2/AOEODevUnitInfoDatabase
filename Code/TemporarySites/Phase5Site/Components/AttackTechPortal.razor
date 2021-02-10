@@ -1,24 +1,30 @@
 ﻿@inherits BasePortalComponent
 <StackLayout Orientation="EnumOrientation.Horizontal"
+             ItemSpacing="20px"
              >
     <StackItem>
-        <button @onclick="OnSave" class="btn btn-primary">
-            Save Selected Techs
-        </button>
+        <ImageButtonComponent MainSource="/SaveSelectedTechs.png"
+                              HoverSource="SaveSelectedTechsHover.png"
+                              OnClick="OnSave" />
+        
     </StackItem>
     <StackItem>
-        <button @onclick="OnCancel" class="btn btn-primary">
-            Cancel
-        </button>
+        <ImageButtonComponent MainSource="/Cancel.png"
+                              HoverSource="/CancelHover.png"
+                              OnClick="OnCancel" />
+        
     </StackItem>
     <StackItem>
-        <button class="btn btn-primary" @onclick="() => DataContext.SelectAllAttackTechs()">
-            Select All Techs
-        </button>
+        <ImageButtonComponent MainSource="/SelectAllTechs.png"
+                              HoverSource="/SelectAllTechsHover.png"
+                              OnClick="() => DataContext.SelectAllAttackTechs()"
+                              />
+        
     </StackItem>
     <StackItem>
-        <button class="btn btn-primary" @onclick="() => DataContext.UnselectAllAttackTechs()">
-            Unselect All Techs
-        </button>
+        <ImageButtonComponent MainSource="/UnselectAllTechs.png"
+                              HoverSource="/UnselectAllTechsHover.png"
+                              OnClick="() => DataContext.UnselectAllAttackTechs()" />
+        
     </StackItem>
 </StackLayout> 
