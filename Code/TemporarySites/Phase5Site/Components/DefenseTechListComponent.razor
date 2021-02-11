@@ -1,4 +1,6 @@
 ﻿@inherits BaseTechListComponent
 <MultiselectCheckboxComponent Data="DataContext.DefenseFullTechList"
                               @bind-Values="Container.DefenseSelectedTechList"
+                              CheckBoxedImage="/check.png"
+                              UncheckedImage="/EmptyCheck.png"
                               RetrieveValue="(item) => item.Name" />
