@@ -45,6 +45,7 @@ namespace Phase5Site.Shared
             _style.Width = "250px";
             _style.HeaderBackgroundColor = cc.Black.ToWebColor();
             _style.HeaderTextColor = "#FBDAAF";
+            _style.AllowDoubleClick = true;
             _style.HighlightColor = _style.HeaderTextColor;
             _style.ComboBackgroundColor = cc.Transparent.ToWebColor();
             _style.ComboTextColor = cc.Black.ToWebColor();

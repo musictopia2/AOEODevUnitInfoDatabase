@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="1.0.32" />
+    <PackageReference Include="BasicBlazorLibrary" Version="1.0.33" />
     <PackageReference Include="CommonBasicStandardLibraries" Version="3.0.23" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.1" PrivateAssets="all" />
